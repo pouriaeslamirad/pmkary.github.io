@@ -3,11 +3,7 @@ layout: post
 title: Arrays in Arendelle
 ---
 
-![](https://raw.githubusercontent.com/pmkary/pmkary.github.io/master/Graphics/Blog/6920.19.0.20/2015-01-28%2019.23.10-720.jpg?token=ACDq5aicoFfF9I6I2MHunayhJPXdBK39ks5U0zWLwA%3D%3D)
-
-<br>
-
-So you may know my language [Arendelle](http://web.arendelle.org), This month we officially released the first version of it for Android, currently we’re developing the language for the rest of the platforms. 
+You may know my language [Arendelle](http://web.arendelle.org), This month we officially released the first version of it for Android, currently we’re developing the language for the rest of the platforms. 
 
 There are things we’re adding to the language and one of them is “Arrays”, Array actually give the user many super powers and it’s a very necessary part of our language. However what you don’t know is it’s already coming with the language in our Android app. 
 
