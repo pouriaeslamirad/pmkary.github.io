@@ -4,7 +4,6 @@ highlighter:      pygments
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Kary
@@ -16,4 +15,3 @@ author:
   name:           Pouya Kary
   url:            https://kary.us
   email:          k@arendelle.org
-
