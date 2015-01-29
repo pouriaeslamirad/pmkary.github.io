@@ -1,0 +1,19 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Kary
+tagline:          A Personal Homepage
+url:              http://kary.us
+paginate:         1
+baseurl:          /
+author:
+  name:           Pouya Kary
+  url:            https://kary.us
+  email:          k@arendelle.org
+
