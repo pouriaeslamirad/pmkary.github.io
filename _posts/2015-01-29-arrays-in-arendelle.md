@@ -1,6 +1,6 @@
 ---
-layout:post
-title:Arrays in Arendelle
+layout: post
+title: Arrays in Arendelle
 ---
 
 ![](http://kary.us/Graphics/Blog/6920.19.0.20
