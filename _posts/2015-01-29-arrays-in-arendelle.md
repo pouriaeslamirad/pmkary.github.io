@@ -63,8 +63,12 @@ So the cool part is when you init the `@space` with `24` it will be `[24]` as so
 
 One thing that remains is how you get the size of an array? It will be done using our ‘?’ operator. When you append the name of a space with `?` you’re asking it’s size, So for example if you do:
 
+<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+
 <pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;5&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Size of @space is \(</span>&nbsp;<span style="color:#4E00FC">@space</span>?&nbsp;<span style="color:#BD00AD">)'</span></pre>
+<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;5&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Size of @space is </span><span style="color:#000000">\(</span>&nbsp;<span style="color:#4E00FC">@space</span>?&nbsp;<span style="color:#000000">)</span><span style="color:#BD00AD">'</span></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
 
 You will get the title:
 
@@ -81,8 +85,12 @@ So there are many possible uses of array and it’s tools. For a simple example 
 
 So as you see it’s very simple in Arendelle, Also stored spaces and functions are working with this system. You can do:
 
+<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+
 <pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;1024&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is: \(</span><span style="color:#4E00FC">$space</span><span style="color:#BD00AD">), Index 9 is: \(</span><span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>9<span style="color:#D60073">]</span><span style="color:#BD00AD">), Size is: \(</span><span style="color:#4E00FC">$space</span>?<span style="color:#BD00AD">)'</span></pre>
+<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;1024&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space</span><span style="color:#000000">)</span><span style="color:#BD00AD">, Index 9 is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>9<span style="color:#D60073">]</span><span style="color:#000000">)</span><span style="color:#BD00AD">, Size is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space</span>?<span style="color:#000000">)</span><span style="color:#BD00AD">'</span></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
 
 
 And as you know Arendelle uses `@return` in functions for storing the return value so you can return multi values grouped in `@return` like:
