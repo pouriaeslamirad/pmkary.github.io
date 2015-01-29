@@ -44,7 +44,7 @@ When it comes to other languages arrays are horrible, For example you have to cr
 
 
 ```c
-int array[4] = {1,234,232,34};
+int array[4] = {1, 234, 232, 34};
 ```
 
 
@@ -52,7 +52,7 @@ Which is not that cool. In some other languages like Swift, C# and so there are 
 
 
 ```Swift
-var array = [1,234,232]
+var array = [1, 234, 232]
 array.append(34)
 ```
 
