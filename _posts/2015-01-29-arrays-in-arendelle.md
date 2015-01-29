@@ -79,45 +79,32 @@ Size of @space is 10
 
 So there are many possible uses of array and it’s tools. For a simple example let’s make a list of 10 random number less than 11:
 
-<br>
 
 <pre style="font-family: Monospace;">
 <span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">(</span>&nbsp;array&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">[</span>&nbsp;20&nbsp;<span style="color:#D60073">,</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;array<span style="color:#D60073">[</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;floor<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">#rnd</span>&nbsp;*&nbsp;11&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">)</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;+1&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">]</span></pre>
 
-<br>
 
 So as you see it’s very simple in Arendelle, Also stored spaces and functions are working with this system. You can do:
 
-<br>
 
 <pre style="font-family: Monospace;">
 <span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;1024&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is \($space), Index 9 is \($space[9]) with size of \($space?)'</span></pre>
 
-<br>
 
 And as you know Arendelle uses `@return` in functions for storing the return value so you can return multi values grouped in `@return` like:
 
-<br>
 
 <pre style="font-family: Monospace;"><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;0&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;1</span><br><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;1&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;2</span><br></pre>
 
-<br>
 
 **NOTE**: To copy a space to another space *Fully as an array* you can simply do:
 
-<br>
-
 <pre style="font-family: Monospace;"><span style="color:#D60073">(</span>&nbsp;space2&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">)</span></pre>
 
-<br>
 
 Arendelle won't do:
 
-<br>
-
 <pre style="font-family: Monospace;"><span style="color:#D60073">(</span>&nbsp;space2<span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span><span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">)</span></pre>
-
-<br>
 
 It will copy the whole `@space` to `@space2`
 
