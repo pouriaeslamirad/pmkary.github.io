@@ -13,7 +13,7 @@ If you’re an Arendelle developer you may have used it without even knowing it!
 
 
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;">
 <span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;4&nbsp;<span style="color:#D60073">)</span></pre>
 
 
@@ -22,7 +22,7 @@ Arendelle makes a space as `[4]` so now if you fill the next index with this cod
 
 
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;">
 <span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;1&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;12&nbsp;<span style="color:#D60073">)</span></pre>
 
 
@@ -31,7 +31,7 @@ You will have `@space = [4, 12]`. Something very very cool about Micha’s imple
 
 
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;">
 <span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;5&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;2&nbsp;<span style="color:#D60073">)</span></pre>
 
 
@@ -55,7 +55,7 @@ array.append(34)
 
 In Arendelle spaces are mutable and you can add to them whenever you want, However the very cool feature of these arrays is you can do this:
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;">
 <span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;24&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;4&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;256&nbsp;<span style="color:#D60073">)</span></pre>
 
 
@@ -63,9 +63,8 @@ So the cool part is when you init the `@space` with `24` it will be `[24]` as so
 
 One thing that remains is how you get the size of an array? It will be done using our ‘?’ operator. When you append the name of a space with `?` you’re asking it’s size, So for example if you do:
 
-
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
-<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;5&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Size of @space is \( @space? )'</span></pre>
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;5&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Size of @space is \(</span>&nbsp;<span style="color:#4E00FC">@space</span>?&nbsp;<span style="color:#BD00AD">)'</span></pre>
 
 You will get the title:
 
@@ -76,32 +75,31 @@ Size of @space is 10
 So there are many possible uses of array and it’s tools. For a simple example let’s make a list of 10 random number less than 11:
 
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;">
 <span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">(</span>&nbsp;array&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">[</span>&nbsp;20&nbsp;<span style="color:#D60073">,</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;array<span style="color:#D60073">[</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;floor<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">#rnd</span>&nbsp;*&nbsp;11&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">)</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;+1&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">]</span></pre>
 
 
 So as you see it’s very simple in Arendelle, Also stored spaces and functions are working with this system. You can do:
 
-
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;">
-<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;1024&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is: \($space), Index 9 is: \($space[9]), Size is: \($space?)'</span></pre>
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;0&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;9&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;1024&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is: \(</span><span style="color:#4E00FC">$space</span><span style="color:#BD00AD">), Index 9 is: \(</span><span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>9<span style="color:#D60073">]</span><span style="color:#BD00AD">), Size is: \(</span><span style="color:#4E00FC">$space</span>?<span style="color:#BD00AD">)'</span></pre>
 
 
 And as you know Arendelle uses `@return` in functions for storing the return value so you can return multi values grouped in `@return` like:
 
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;"><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;0&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;1</span><br><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;1&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;2</span><br></pre>
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;"><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;0&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;1</span><br><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;1&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;2</span><br></pre>
 
 <br><br>
 <hr>
 **NOTE**: To copy a space to another space *Fully as an array* you can simply do:
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Menlo, Monaco, Courier 10 Pitch, Monospace;;"><span style="color:#D60073">(</span>&nbsp;space2&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Menlo, Monaco, 'Courier 10 Pitch', Monospace;;"><span style="color:#D60073">(</span>&nbsp;space2&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">)</span></pre>
 
 
 Arendelle won't do:
 
-<pre style="font-family: Menlo, Monaco, Courier 10 Pitch, Monospace;;"><span style="color:#D60073">(</span>&nbsp;space2<span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span><span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;;"><span style="color:#D60073">(</span>&nbsp;space2<span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span><span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">)</span></pre>
 
 It will copy the whole `@space` to `@space2`
 <hr><br><br>
