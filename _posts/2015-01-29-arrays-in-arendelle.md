@@ -92,7 +92,8 @@ And as you know Arendelle uses `@return` in functions for storing the return val
 
 <pre style="font-family: Monospace;"><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;0&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;1</span><br><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;1&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;2</span><br></pre>
 
-
+<br><br>
+<hr>
 **NOTE**: To copy a space to another space *Fully as an array* you can simply do:
 
 <pre style="font-family: Monospace;"><span style="color:#D60073">(</span>&nbsp;space2&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">)</span></pre>
@@ -103,6 +104,7 @@ Arendelle won't do:
 <pre style="font-family: Monospace;"><span style="color:#D60073">(</span>&nbsp;space2<span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span><span style="color:#D60073">[</span>0<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">)</span></pre>
 
 It will copy the whole `@space` to `@space2`
+<hr><br><br>
 
 So that’s it for now, There will be some more features added but before we officially launch it, You can have some fun with it!
 
