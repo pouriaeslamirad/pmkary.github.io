@@ -13,32 +13,32 @@ If you’re an Arendelle developer you may have used it without even knowing it!
 
 
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">4</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;space&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">4</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
 
 Arendelle makes a space as `[ 4 ]` so now if you fill the next index with this code:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">1</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">12</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">1</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">12</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 You will have `@space = [4, 12]`. Something very very cool about Micha’s implementation is if you do: 
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">5</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">2</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">5</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 When it comes to other languages arrays are horrible, For example you have to create them with a limited size like when you do this in c:
 
@@ -59,23 +59,23 @@ array.append(34)
 
 In Arendelle spaces are mutable and you can add to them whenever you want, However the very cool feature of these arrays is you can do this:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">24</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">4</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">256</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;space&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">24</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #D60073;">(</span>&nbsp;space<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">4</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">256</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 So the cool part is when you init the `@space` with `24` it will be `[24]` as soon as you do `(space[ 4 ], 256)` you’re telling Arendelle to fill the fifth index, but as you know there is no second, third and fourth index and it’s no problem because Arendelle automatically fills these indexes with zero for you, So the result of the code will be `[24, 0, 0, 0, 256]`
 
 One thing that remains is how you get the size of an array? It will be done using our ‘?’ operator. When you append the name of a space with `?` you’re asking it’s size, So for example if you do:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space<span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">9</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">5</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Size of @space is </span><span style="color:#000000">\(</span>&nbsp;<span style="color:#4E00FC">@space?</span>&nbsp;<span style="color:#000000">)</span><span style="color:#BD00AD">'</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">9</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">5</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #BD00AD;">'Size of @space is </span><span style="color: #000000;">\(</span>&nbsp;<span style="color: #4E00FC;">@space?</span>&nbsp;<span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 You will get the title:
 
@@ -85,47 +85,52 @@ Size of @space is 10
 
 So there are many possible uses of array and it’s tools. For a simple example let’s make a list of 10 random number less than 11:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">0</span>&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">(</span>&nbsp;array&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">0</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">20</span>&nbsp;<span style="color:#D60073">,</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;array<span style="color:#D60073">[</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;floor<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">#rnd</span>&nbsp;*&nbsp;<span style="color:#4A90E2">11</span>&nbsp;<span style="color:#D60073">)</span>&nbsp;<span style="color:#D60073">)</span><br>&nbsp;&nbsp;&nbsp;<span style="color:#D60073">(</span>&nbsp;space&nbsp;<span style="color:#D60073">,</span>&nbsp;+<span style="color:#4A90E2">1</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">]</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;space&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">0</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;array&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">0</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">20</span>&nbsp;<span style="color: #D60073;">,</span><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">(</span>&nbsp;array<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@space</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;floor<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">#rnd</span>&nbsp;*&nbsp;<span style="color: #6200A8;">11</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">)</span><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;space&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;+<span style="color: #6200A8;">1</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #D60073;">]</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 So as you see it’s very simple in Arendelle, Also stored spaces and functions are working with this system. You can do:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">0</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#D60073">(</span>&nbsp;<span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">9</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4A90E2">1024</span>&nbsp;<span style="color:#D60073">)</span><br><span style="color:#BD00AD">'Index 0 is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space</span><span style="color:#000000">)</span><span style="color:#BD00AD">, Index 9 is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space</span><span style="color:#D60073">[</span><span style="color:#4A90E2">9</span><span style="color:#D60073">]</span><span style="color:#000000">)</span><span style="color:#BD00AD">, Size is: </span><span style="color:#000000">\(</span><span style="color:#4E00FC">$space?</span><span style="color:#000000">)</span><span style="color:#BD00AD">'</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">$space</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">0</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">$space</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">9</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">1024</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #BD00AD;">'Index 0 is: </span><span style="color: #000000;">\(</span><span style="color: #4E00FC;">$space</span><span style="color: #000000;">)</span><span style="color: #BD00AD;">, Index 9 is: </span><span style="color: #000000;">\(</span><span style="color: #4E00FC;">$space</span><span style="color: #D60073;">[</span><span style="color: #6200A8;">9</span><span style="color: #D60073;">]</span><span style="color: #000000;">)</span><span style="color: #BD00AD;">, Size is: </span><span style="color: #000000;">\(</span><span style="color: #4E00FC;">$space?</span><span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 And as you know Arendelle uses `@return` in functions for storing the return value so you can return multi values grouped in `@return` like:
 
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">0</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;1</span><br><span style="color:#D60073">!func</span><span style="color:#D60073">(</span><span style="color:#D60073">)</span><span style="color:#D60073">[</span>&nbsp;<span style="color:#4A90E2">1</span>&nbsp;<span style="color:#D60073">]</span>&nbsp;<span style="color:#A0A0A0">//&nbsp;value&nbsp;2</span><br></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">!func</span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">0</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #A0A0A0;">//&nbsp;value&nbsp;1</span><br><span style="color: #D60073;">!func</span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">1</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #A0A0A0;">//&nbsp;value&nbsp;2</span><br></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 <br><br>
 <hr>
 **NOTE**: To copy a space to another space *Fully as an array* you can simply do:
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Menlo, Monaco, 'Courier 10 Pitch', Monospace;;"><span style="color:#D60073">(</span>&nbsp;space2&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #4E00FC;">@space</span>&nbsp;<span style="color: #D60073;">)</span></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
 Arendelle won't do:
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color:#D60073">(</span>&nbsp;space2<span style="color:#D60073">[</span><span style="color:#4A90E2">0</span><span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">,</span>&nbsp;<span style="color:#4E00FC">@space</span><span style="color:#D60073">[</span><span style="color:#4A90E2">0</span><span style="color:#D60073">]</span>&nbsp;<span style="color:#D60073">)</span></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #6200A8;">2</span><span style="color: #D60073;">[</span><span style="color: #6200A8;">0</span><span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #4E00FC;">@space</span><span style="color: #D60073;">[</span><span style="color: #6200A8;">0</span><span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.03 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 It will copy the whole `@space` to `@space2`
 <hr><br><br>
