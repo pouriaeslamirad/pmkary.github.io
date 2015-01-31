@@ -73,7 +73,7 @@ One thing that remains is how you get the size of an array? It will be done usin
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 <pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color: #D60073;">(</span>&nbsp;space<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">9</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">5</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #BD00AD;">'Size of @space is </span><span style="color: #000000;">\(</span>&nbsp;<span style="color: #4E00FC;">@space?</span>&nbsp;<span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span></pre>
+<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;space&nbsp;</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">9</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">5</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #BD00AD;">'Size of @space is </span><span style="color: #000000;">\(</span>&nbsp;<span style="color: #4E00FC;">@space?</span>&nbsp;<span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
