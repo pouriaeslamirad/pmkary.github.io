@@ -4,7 +4,7 @@ title: Showcase
 ---
 
 # Showcase
-<h2><small style="color:#797979;">2014-2015</small>  Arendelle Language</h2>
+<h2><small style="color:#797979;">2014</small>  Arendelle Language</h2>
 [Website](http://web.arendelle.org) | [Developer Website](http://web.arendelle.org/developer/) | [GitHub Repositoriess](http://github.com/arendelle)<br>
 Arendelle is a domain-specific programming language for creating 16-bit like Pixel art. Arendelle uses a grid system and a pointer for navigating and painting the desired squares of the grid. The grammar behind Arendelle is completely new as it uses only one character for it's commands and grammars. Just like everything else in Arendelle the main engine of the language is based on a new interpreter design invented by Pouya Kary named *Recursive Scanner* rather than the Lexer-Parser-Code-Generator. Using this technique the interpreter actually never generates any code. It reads the code and execute it. Like a byte-code runtime but much more powerful to understand grammars. This way for executing makes the software much more fast and efficient<br><br>
 
@@ -12,15 +12,15 @@ Arendelle is a domain-specific programming language for creating 16-bit like Pix
 [Website](http://web.arendelle.org/developer/marker) | [GitHub](https://github.com/arendelle/marker)<br>
 Arendelle to highlighted HTML compiler, It generates standard HTML / CSS code with. Based on the extended version of code scanners in Arendelle.NET and colors of "Arendelle Pink" design color plate of Arendelle it generates the best highlight possible for Arendelle to be used in webpages. It's been used for highlighting texts of Arendelle Book, Arendelle's Website and other pages coming with Arendelle Materials.<br><br>
 
-<h2><small style="color:#797979;">2014-2015</small>  Swifty</h2>
+<h2><small style="color:#797979;">2014</small>  Swifty</h2>
 [Website](http://web.arendelle.org/developer/swifty) | [GitHub](https://github.com/arendelle/swifty)<br>
 Full featured developer REPL (Read-Evaluate-Print-Loop) for Arendelle's "Core Arendelle". Gives you access to the dataset of spaces in the Core Arendelle. Also gives you tools to run Arendelle "Expression-Zone" directly, Gives you access to Core Arendelle's codeScreen's X, Y, Matrix and Title attributes with prompt waiting for unfinished Arendelle Grammars.<br><br>
 
-<h2><small style="color:#797979;">2014-2015</small>  Core Arendelle</h2>
+<h2><small style="color:#797979;">2014</small>  Core Arendelle</h2>
 [GitHub](https://github.com/arendelle/swifty)<br>
 Arendelle's Apple-tech based compiler written in Swift and a bit of Objective-C and C. It's a fully featured Arendelle engine with support of the latest features of Arendelle, Used by Arendelle's official apps for iOS and OS X as well as Swifty command line REPL.<br><br>
 
-<h2><small style="color:#797979;">2014-2015</small>  Arendelle Book</h2>
+<h2><small style="color:#797979;">2014</small>  Arendelle Book</h2>
 [Book](http://web.arendelle.org/book/) | [GitHub](https://github.com/arendelle/book)<br>
 Official book for learning Arendelle Language. The book is for people with no background in programming so it teaches programming while teaches Arendelle. The book is available online free of charge and open source coming as a part of Arendelle's "New Education System"<br><br>
 
