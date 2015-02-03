@@ -76,7 +76,8 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #8C007F;
+  /*color: #8C007F;*/
+  color:#CA0060;
 }
 
 /* Headings */
