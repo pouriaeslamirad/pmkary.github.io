@@ -40,7 +40,7 @@ Arcade IDE is the official cross-platform command line environment for Arendelle
 [Website](http://research.arendelle.org/projects/pabbie) | [GitHub](http://github.com/arendelle/pabbie) <br>
 Pabbie is language that compiles into Arendelle using a very simple and light weight source-to-source compiler. Pabbie is aimed to have a syntax and grammar close to everyday human English as a research on human language understanding and bringing programming to the people with no background on programming. The research also aims to bridge 5th generation programming languages and complex machine learning techniques to it's design to develop a language that people use to explain what they need and the system generates applications.<br><br>
 
-<h2><small style="color:#797979;">2014</small>  Chess Knight Path Optimizer</h2>
+<h2><small style="color:#797979;">2014</small>  Knight</h2>
 [Website](http://kary.us/projects/knight) | [GitHub](http://github.com/pmkary/knight) <br>
 A mathematical optimization for generating the optimized path for a Chess Knight to move from button left to the top right of a chess board with any size. The software for this algorithm is written in Arendelle Language and it's the first Arendelle software that processes a given input and generates something. Reading the code will be good for practicing data visualizations in Arendelle<br><br>
 
