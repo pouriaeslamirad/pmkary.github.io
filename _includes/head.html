@@ -37,4 +37,24 @@
     ga('create', 'UA-146052-15', 'getpoole.com');
     ga('send', 'pageview');
   </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+  <script type="text/javascript">
+    var menuState = false;
+    function showHide () {
+      if ( menuState ) {
+        menuState = false;
+        $("#menu").slideUp(100);
+        $("#menuTitle").text("Hide")
+      } else {
+        menuState = true;
+        $("#menu").slideDown(100);
+        $("#menuTitle").text("Kary")
+      }
+    }
+    function start () {
+
+      $("#menu").slideUp(1000);
+    }
+  </script>
 </head>
