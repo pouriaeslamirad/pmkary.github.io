@@ -45,12 +45,10 @@
       if ( menuState ) {
         menuState = false;
         $("#menu").slideUp(500);
-        $("#personal").text("A Personal Homepage").fadeIn(300)
         $("#menuTitle").text("Kary")
       } else {
         menuState = true;
         $("#menu").slideDown(500);
-        $("#personal").text("Today is <script src='karion.js'></script>").fadeIn(300)
         $("#menuTitle").text("Hide")
       }
     }
