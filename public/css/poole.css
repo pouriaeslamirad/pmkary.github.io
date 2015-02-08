@@ -286,18 +286,13 @@ tbody tr:nth-child(odd) th {
  * Center the page content.
  */
 
-.hidden { 
-  display: none;
-  visibility: hidden; 
-}
-
 .karyHeader{
   max-width: 38rem; 
   padding-left:  1rem; 
   padding-right: 1rem; 
   margin-left:  auto; 
   margin-right: auto; 
-  color:#fff; 
+  color:#000; 
 }
 
 karyHeader a {
