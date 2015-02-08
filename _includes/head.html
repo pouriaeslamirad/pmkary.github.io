@@ -45,12 +45,12 @@
       if ( menuState ) {
         menuState = false;
         $("#menu").slideUp(500);
-        $("#personal").fadeIn(300)
+        $("#personal").text("A Personal Homepage").fadeIn(300)
         $("#menuTitle").text("Kary")
       } else {
         menuState = true;
         $("#menu").slideDown(500);
-        $("#personal").fadeOut(300)
+        $("#personal").text("Navingation Bar")
         $("#menuTitle").text("Hide")
       }
     }
