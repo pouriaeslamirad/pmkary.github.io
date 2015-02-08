@@ -4,38 +4,40 @@
   {% include head.html %}
 
   <body onload="start()">
-    <div style="background-color:#000;background-image: url(http://kary.us/Graphics/menu/dot.png);background-position: center left; background-repeat: repeat-y repeat-x; width:100%; display: none; height:7rem;" id="menu">
+    <div style="background-color:#000;background-image: url(http://kary.us/Graphics/menu/dot.png);background-position: center left; background-repeat: repeat-y repeat-x; width:100%; display: none;" id="menu">
       <div class="karyHeader">
-        <div style="height: 10px;"></div>
+        <div style="height: 15px;"></div>
         <!-- Home Button -->
         <div style="float:left; width:25%;">
           <a href="http://kary.us/">
-            <img src="http://kary.us/Graphics/menu/home.png" style="width:5.5rem;">
+            <img src="http://kary.us/Graphics/menu/home.png" style="width:5rem;">
           </a>
         </div>
         <!-- Info Button -->
         <div style="float:left;  width:25%;">
           <a href="kary.us/information/">
-            <img src="http://kary.us/Graphics/menu/info.png" style="width:5.5rem;">
+            <img src="http://kary.us/Graphics/menu/info.png" style="width:5rem;">
           </a>
         </div>
         <!-- Connect Button -->
         <div style="float:left;  width:25%;">
           <a href="kary.us/internet/">
-            <img src="http://kary.us/Graphics/menu/connect.png" style="width:5.5rem;">
+            <img src="http://kary.us/Graphics/menu/connect.png" style="width:5rem;">
           </a>
         </div>
         <!-- Services Button -->
         <div style="float:left;  width:25%;">
           <a href="kary.us/services/">
-            <img src="http://kary.us/Graphics/menu/services.png" style="width:5.5rem;">
+            <img src="http://kary.us/Graphics/menu/services.png" style="width:5rem;">
           </a>
         </div>
+        <div style="height: 15px;"></div>
         <div style="clear:both; height:0px;"></div>
       </div>
+      <div style="height: 15px;"></div>
     </div>
 
-    <div class="container content">
+    <div class="container content" style="clear:both">
       <header class="masthead">
         <h3 class="masthead-title">
           <a title="Menu" id="menuTitle" onclick="showHide()">Kary</a>
