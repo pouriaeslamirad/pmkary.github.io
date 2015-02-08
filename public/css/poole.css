@@ -295,7 +295,7 @@ tbody tr:nth-child(odd) th {
   color:#fff; 
 }
 
-a.karyHeader{
+karyHeader a {
   color:#eee;
 }
 
