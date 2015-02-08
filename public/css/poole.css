@@ -286,6 +286,19 @@ tbody tr:nth-child(odd) th {
  * Center the page content.
  */
 
+.karyHeader{
+  max-width: 38rem; 
+  padding-left:  1rem; 
+  padding-right: 1rem; 
+  margin-left:  auto; 
+  margin-right: auto; 
+  color:#fff; 
+}
+
+a.karyHeader{
+  color:#eee;
+}
+
 .container {
   max-width: 38rem;
   padding-left:  1rem;
