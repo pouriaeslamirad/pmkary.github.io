@@ -286,7 +286,10 @@ tbody tr:nth-child(odd) th {
  * Center the page content.
  */
 
-.hidden { display: none; }
+.hidden { 
+  display: none;
+  visibility: hidden; 
+}
 
 .karyHeader{
   max-width: 38rem; 
