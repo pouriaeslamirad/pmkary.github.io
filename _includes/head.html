@@ -41,6 +41,8 @@
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script type="text/javascript">
     var menuState = false;
+
+    // showShide
     function showHide () {
       if ( menuState ) {
         menuState = false;
@@ -50,10 +52,11 @@
         menuState = true;
         $("#menu").slideDown(500);
         $("#menuTitle").text("Hide")
-        setTimeout(fadeInText, 10000)
-        
+        setTimeout(fadeInText, 600)
       }
     }
+
+    // fadeInText
     function fadeInText () {
         $("#homeButton").fadeIn(200)
         $("#infoButton").fadeIn(200)
