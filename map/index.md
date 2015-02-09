@@ -5,6 +5,8 @@ title: Map
 
 # Map
 
+<br>
+
 ## Pages
 
 - **[Blog](http://kary.us/)** : Things i like to share
@@ -35,7 +37,7 @@ title: Map
 - **[Core Arendelle](https://github.com/arendelle/swifty)**
 - **[Arendelle Book](https://github.com/arendelle/book)**
 - **[Cliff](https://github.com/arendelle/cliff)**
-- **[Gothi](https://github.com/arendelle/gothi)
+- **[Gothi](https://github.com/arendelle/gothi)**
 - **[Arcade IDE](http://github.com/arendelle/arendelle)**
 - **[Pabbie Language](http://github.com/arendelle/pabbie)**
 - **[Knight](http://github.com/pmkary/knight)**
@@ -73,10 +75,10 @@ title: Map
 - **[KinBoard](http://www.softpedia.com/get/Multimedia/Graphic/Graphic-Others/KinBoard.shtml)** from Softpedia
 - **[SPACIUM](http://fontstruct.com/fontstructions/show/spacium_beta_4)** from FontStruct
 - **[Kincob]()** from thepa
-- **[Comicsaver](http://files.basekit.com/live116395_comicsaver.zip) from thepa
+- **[Comicsaver](http://files.basekit.com/live116395_comicsaver.zip)** from thepa
 - **[Binominor](http://files.basekit.com/live116395_binominor-0.0.2.2.zip)** from thepa
-- **[ROMAN](http://files.basekit.com/live116395_roman1.0.zip) from thepa
-- **[FactorX](http://files.basekit.com/live116395_factorex4.9.g3m.zip) from thepa
-- **[Comicfont](http://files.basekit.com/live116395_comicfont.zip) from thepa
+- **[ROMAN](http://files.basekit.com/live116395_roman1.0.zip)** from thepa
+- **[FactorX](http://files.basekit.com/live116395_factorex4.9.g3m.zip)** from thepa
+- **[Comicfont](http://files.basekit.com/live116395_comicfont.zip)** from thepa
 
 
