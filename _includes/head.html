@@ -50,11 +50,16 @@
         menuState = true;
         $("#menu").slideDown(500);
         $("#menuTitle").text("Hide")
+        setTimeout(fadeInText, 10000)
+        
+      }
+    }
+    function fadeInText () {
         $("#homeButton").fadeIn(200)
         $("#infoButton").fadeIn(200)
         $("#connectButton").fadeIn(200)
         $("#servicesButton").fadeIn(200)
-      }
     }
+
   </script>
 </head>
