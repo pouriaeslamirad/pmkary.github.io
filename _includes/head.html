@@ -41,37 +41,16 @@
   <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
   <script type="text/javascript">
     var menuState = false;
-
-    // showShide
     function showHide () {
       if ( menuState ) {
         menuState = false;
-        setTimeout(fadeOutText, 600);
         $("#menu").slideUp(500);
         $("#menuTitle").text("Kary");
       } else {
         menuState = true;
         $("#menu").slideDown(500);
         $("#menuTitle").text("Hide");
-        setTimeout(fadeInText, 600);
       }
     }
-
-    // fadeInText
-    function fadeInText () {
-        $("#homeButton").fadeIn(200)
-        $("#infoButton").fadeIn(200)
-        $("#connectButton").fadeIn(200)
-        $("#servicesButton").fadeIn(200)
-    }
-
-    // faseOutText
-    function fadeOutText () {
-        $("#homeButton").fadeOut(200)
-        $("#infoButton").fadeOut(200)
-        $("#connectButton").fadeOut(200)
-        $("#servicesButton").fadeOut(200)
-    }
-
   </script>
 </head>
