@@ -5,7 +5,7 @@ title: Map
 
 # Map
 
-<br>
+***
 
 ## Pages
 
@@ -15,7 +15,7 @@ title: Map
 - **[Internet](http://kary.us/internet)** : List of ways to get in touch with me
 - **[Lists](http://kary.us/lists/)** : List and ranking for my collective interests
 
-<br><br>
+***
 
 ## Services
 
@@ -24,10 +24,9 @@ title: Map
 - **[Thepa Archive](http://thepa.kary.us) : In memory of the first days of thepa. A simulation of the first thepa BaseKit
 - **[2048](http://2048)** : Online (In browser) 2014 server
 
-<br><br>
+***
 
 ## Projects:
-
 - **[Arendelle Language](http://web.arendelle.org)**
 - **[Arendelle iOS](https://github.com/arendelle/iOS)**
 - **[Arendelle Android](https://github.com/arendelle/android)**
@@ -56,7 +55,7 @@ title: Map
 - **[Binominor](https://github.com/pmkary/Binominor)**
 - **[Kincob](http://thepa.mx/kincob)**
 
-<br><br>
+***
 
 ## Arendelle Software
 
@@ -66,7 +65,7 @@ title: Map
 - **[Q-Bert](https://github.com/arendelle/qbert.arendelle)**
 - **[Lambda](https://github.com/arendelle/lambda.arendelle)**
 
-<br><br>
+***
 
 ## Downloads
 
