@@ -21,7 +21,7 @@ title: Map
 
 - **[Karion](http://kary.us/karion/)** : Online homepage of my time system. A very smarter way to keep time
 - **[Kary HOT 500](http://kary.us/hot/)** : Funny collaboration project to collect and rank the top 500 hottest female celebrities
-- **[Thepa Archive](http://thepa.kary.us) : In memory of the first days of thepa. A simulation of the first thepa BaseKit
+- **[Thepa Archive](http://thepa.kary.us)** : In memory of the first days of thepa. A simulation of the first thepa BaseKit
 - **[2048](http://2048)** : Online (In browser) 2014 server
 
 ***
