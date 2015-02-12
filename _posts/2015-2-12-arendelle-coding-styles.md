@@ -278,12 +278,14 @@ But when you can use spaces in Arendelle why not? You can do:
 When it comes to `!`, `@`, `$`, `#` and `.` for directory addressing use them like this:
 
 
+
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
 <pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">$stored space </span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@space name </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span>&nbsp;<br><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@use </span>.of&nbsp;.stored&nbsp;space&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
+<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">$stored space </span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@space name </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span>&nbsp;<br><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">$use .of .stored space </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
 
 
 If you're a developer like me this kind of naming may look a bit strange and confusing to you. I know at first it's unacceptable but as soon as you worm up to it, It becomes a more readable way to read and write codes.
@@ -400,6 +402,7 @@ I think that was a good enough example!
 
 # That's it!
 I hope you like my style of coding. This is the actual way that Arendelle is made for and I hope you use it too. A part of my style is using **First Spacings**, **Standard Copyright** and **Done** comment which that are explained in the [Arendelle Book](http://web.arendelle.org/book). So I hope you use them too. Also gimme your suggestions on how to make this style better.
+
 
 
 
