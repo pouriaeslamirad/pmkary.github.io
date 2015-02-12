@@ -12,15 +12,25 @@ I don’t agree with all other people’s ideas and for example i like the idea 
 ## Let’s start from basics
 First thing you write in Arendelle is commands and we write commands with no space like this
 
-```
-prpldp
-```
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+prpldp<br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
 
 However sometime we separate this command with spaces like this:
 
-```
-prp ld prp
-```
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+prp&nbsp;ld&nbsp;prp<br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
 
 This kind of spacings gives `pro` and `ld` some kind of identity  which is very good when you’re going to read the codes. No when it comes to comments you may wonder how to space? In the other languages you do something like this which is really not cool:
 
@@ -68,15 +78,20 @@ This way you give the `// ` kind of a new life and a new look. Then what come to
 ## Writing Grammars
 In Arendelle all the grammars are same in design. All of the start with something and then you separate the parts using `,` and then they finish with something like
 
-```
-[ , ]  { , }  < , >  ( , ) 
-```
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">[</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;&nbsp;<span style="color: #D60073;">{</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">}</span>&nbsp;&nbsp;<span style="color: #D60073;"><</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">></span>&nbsp;&nbsp;<span style="color: #D60073;">(</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
 
 And the format for highlighting this codes are simple. You should do this:
 
-<br>
-<img src="http://kary.us/Graphics/Blog/6974.19.1.4/spacingOf10pr.png/" style="width:18.9rem">
-<br>
+<br><center>
+<img src="http://kary.us/Graphics/Blog/6974.19.1.4/spacingOf10pr.png" style="width:18.9rem">
+</center><br>
 
 So I think I don’t have to guide you any more on this! Write things like:
 
@@ -114,9 +129,14 @@ Now the thing that comes to mind is parentheses. Apply the same principles on th
 
 You see how more clear they looks? You can also use them like:
 
-```
-( ( #i / 2 ) + 4 )
-```
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">#i</span>&nbsp;/&nbsp;<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;+&nbsp;<span style="color: #6200A8;">4</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
 
 Speaking of parentheses when you use inline string replacers like:
 
@@ -131,10 +151,9 @@ Speaking of parentheses when you use inline string replacers like:
 
 Use a space before and after the math expression like:
 
-<br>
-<img src="http://kary.us/Graphics/Blog/6974.19.1.4/inSpaceStringReplacer.png/" style="width:21.5rem">
-<br>
-
+<br><center>
+<img src="http://kary.us/Graphics/Blog/6974.19.1.4/inSpaceStringReplacer.png" style="width:21.5rem">
+</center></br>
 
 So with that do:
 
@@ -335,3 +354,4 @@ I think that was a good enough example!
 
 # That's it!
 I hope you like my style of coding. This is the actual way that Arendelle is made for and I hope you use it too. A part of my style is using **First Spacings**, **Standard Copyright** and **Done** comment which that are explained in the [Arendelle Book](http://web.arendelle.org/book). So I hope you use them too. Also gimme your suggestions on how to make this style better.
+
