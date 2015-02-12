@@ -17,7 +17,7 @@ First thing you write in Arendelle is commands and we write commands with no spa
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 prpldp<br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -30,7 +30,7 @@ However sometime we separate this command with spaces like this:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 prp&nbsp;ld&nbsp;prp<br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -66,7 +66,7 @@ Which when you use `#` header operator it actually puts it out of the screen. I 
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #A0A0A0;">//&nbsp;When&nbsp;you&nbsp;write&nbsp;comments&nbsp;things&nbsp;that&nbsp;are</span><br><span style="color: #A0A0A0;">//&nbsp;for&nbsp;the&nbsp;comment&nbsp;will&nbsp;come&nbsp;in&nbsp;3&nbsp;spaces&nbsp;so&nbsp;the</span><br><span style="color: #A0A0A0;">//&nbsp;like&nbsp;it’s&nbsp;part&nbsp;of&nbsp;the&nbsp;text’s&nbsp;content&nbsp;not&nbsp;`//&nbsp;`</span><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -79,7 +79,7 @@ This way you give the `// ` kind of a new life and a new look. Then what come to
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="<small style="color:#797979;">font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #A0A0A0;">//&nbsp;level&nbsp;one&nbsp;comment</span><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br><br>&nbsp;&nbsp;&nbsp;<span style="color: #A0A0A0;">//&nbsp;level&nbsp;two&nbsp;comment</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">20</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #A0A0A0;">//&nbsp;level&nbsp;three&nbsp;comment</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pd&nbsp;<span style="color: #D60073;">]</span><br><br>&nbsp;&nbsp;&nbsp;<span style="color: #A0A0A0;">//&nbsp;back&nbsp;to&nbsp;level&nbsp;two</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br><br><span style="color: #A0A0A0;">//&nbsp;done</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -93,7 +93,7 @@ In Arendelle all the grammars are same in design. All of the start with somethin
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">[</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;&nbsp;<span style="color: #D60073;">{</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">}</span>&nbsp;&nbsp;<span style="color: #D60073;"><</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">></span>&nbsp;&nbsp;<span style="color: #D60073;">(</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -112,7 +112,7 @@ So I think I don’t have to guide you any more on this! Write things like:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span>&nbsp;ll&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">20</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -126,7 +126,7 @@ I believe if we write mathematical expressions with a space between all the oper
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #4E00FC;">@space</span>&nbsp;+&nbsp;<span style="color: #6200A8;">10</span>&nbsp;/&nbsp;<span style="color: #6200A8;">2</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -139,7 +139,7 @@ Now the thing that comes to mind is parentheses. Apply the same principles on th
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">#i</span>&nbsp;+&nbsp;<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;/&nbsp;<span style="color: #6200A8;">5</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -152,7 +152,7 @@ You see how more clear they looks? You can also use them like:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">#i</span>&nbsp;/&nbsp;<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;+&nbsp;<span style="color: #6200A8;">4</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -165,7 +165,7 @@ Speaking of parentheses when you use inline string replacers like:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #BD00AD;">'Inline string replacer: </span><span style="color: #000000;">\(</span>&nbsp;<span style="color: #4E00FC;">@space</span>&nbsp;<span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -184,7 +184,7 @@ So with that do:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #BD00AD;">'half of space is </span><span style="color: #000000;">\(</span>&nbsp;<span style="color: #4E00FC;">@space</span>&nbsp;/&nbsp;<span style="color: #6200A8;">2</span>&nbsp;<span style="color: #000000;">)</span><span style="color: #BD00AD;">'</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -197,7 +197,7 @@ In Arendelle you can give **Spaces**, **Stored Spaces** and **Functions** names.
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;size&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;age&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">18</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;year&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">2015</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -209,7 +209,7 @@ Space names are `lowercase` (`a-z` not `A-Z`) very simple. However the problem s
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;aLongName&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -221,7 +221,7 @@ Like many implementations of FORTRAN, Arendelle removes all the new lines, space
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;age&nbsp;of&nbsp;kary&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">19</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -233,7 +233,7 @@ Is acceptable and well you can use it likewise as:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@age of kary </span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">19</span>&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -245,7 +245,7 @@ As well as using
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@ageOfKary</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">19</span>&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -267,7 +267,7 @@ But when you can use spaces in Arendelle why not? You can do:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;age&nbsp;of&nbsp;kary&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">19</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@age of kary </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -281,7 +281,7 @@ When it comes to `!`, `@`, `$`, `#` and `.` for directory addressing use them li
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span>&nbsp;<span style="color: #4E00FC;">$stored space </span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@space name </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span>&nbsp;<br><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">$use .of .stored space </span><span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -299,7 +299,7 @@ I very much like to write function names like this:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">!func name </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -310,7 +310,7 @@ And also function address:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">!folder .func </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span>&nbsp;<span style="color: #A0A0A0;">/*&nbsp;or&nbsp;*/</span>&nbsp;<span style="color: #D60073;">!folder.func </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -324,7 +324,7 @@ Use the C way, However after stating asterisks use 3 spaces, Something like this
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #A0A0A0;">/*<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;A&nbsp;multi&nbsp;line<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;comment&nbsp;must&nbsp;be&nbsp;something<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;very&nbsp;much&nbsp;like&nbsp;this<br>&nbsp;*/</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -338,7 +338,7 @@ It's better if you init multi member arrays like this:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;array&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">12</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">23</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">34</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">454</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">232</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -351,7 +351,7 @@ And please no:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">array</span><span style="color: #D60073;">,</span><span style="color: #6200A8;">23</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">23</span><span style="color: #D60073;">;</span><span style="color: #6200A8;">34</span><span style="color: #D60073;">;</span>&nbsp;<span style="color: #6200A8;">23</span><span style="color: #D60073;">;</span><span style="color: #6200A8;">2122</span><span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -364,7 +364,7 @@ Also when you want to load an array index use this way:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #4E00FC;">@array</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@index</span>&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
@@ -376,7 +376,7 @@ Also for nested ones use:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #4E00FC;">@array</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@nested array</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@also nested array</span><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@index </span><span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">]</span>&nbsp;<span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -389,7 +389,7 @@ As I said before use 3 space tabs and this style:
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;line&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">0</span>&nbsp;<span style="color: #D60073;">)</span><br><span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">#j</span><span style="color: #D60073;">,</span><br>&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #4E00FC;">@line</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;d&nbsp;<span style="color: #D60073;">]</span>&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;line&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;+<span style="color: #6200A8;">1</span>&nbsp;<span style="color: #D60073;">)</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">{</span>&nbsp;<span style="color: #4E00FC;">#x</span>&nbsp;<span style="color: #D60073;"><</span>&nbsp;<span style="color: #4E00FC;">#y</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;p&nbsp;<span style="color: #D60073;">}</span>&nbsp;r<br><span style="color: #D60073;">]</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
