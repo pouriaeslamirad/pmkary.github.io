@@ -195,12 +195,12 @@ So with that do:
 In Arendelle you can give **Spaces**, **Stored Spaces** and **Functions** names. naming this things are more often a very simple task like:
 
 
-<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
-<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;size&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;age&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">18</span>&nbsp;<span style="color: #D60073;">)</span>&nbsp;<span style="color: #D60073;">(</span>&nbsp;year&nbsp;<span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">2015</span>&nbsp;<span style="color: #D60073;">)</span><br></pre>
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;size&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
-<!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
 
 
