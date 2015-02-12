@@ -174,14 +174,6 @@ Speaking of parentheses when you use inline string replacers like:
 
 Use a space before and after the math expression like:
 
-<br><center>
-<img src="http://kary.us/Graphics/Blog/6974.19.1.4/inSpaceStringReplacer.png" style="width:21.5rem">
-</center></br>
-
-So with that do:
-
-
-
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 <pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
