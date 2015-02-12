@@ -6,6 +6,7 @@ title: Map
 # Map
 
 ## Find
+<div>
 <script>
   (function() {
     var cx = '013903071433048024122:kqyn6zq0wro';
@@ -19,6 +20,7 @@ title: Map
   })();
 </script>
 <gcse:search></gcse:search>
+</div>
 
 ***
 
