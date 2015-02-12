@@ -9,6 +9,7 @@ In it’s design I applied a very simple concept that I care so much and it’s 
 
 I don’t agree with all other people’s ideas and for example i like the idea of CamelCase and camelBack naming styles and till this day I always hated underlines in names. So I will explain you how to code in my style with Arendelle however as every documentation of Arendelle till this day is written by me only way you may know of Arendelle codes are most probably my way however I would like ver much to once and for all explain how my style and notation works (Have in mind that this Arendelle’s original way of coding is what I show you here)
 
+<br><br>
 ## Let’s start from basics
 First thing you write in Arendelle is commands and we write commands with no space like this
 
@@ -84,7 +85,7 @@ This way you give the `// ` kind of a new life and a new look. Then what come to
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
-
+<br><br>
 ## Writing Grammars
 In Arendelle all the grammars are same in design. All of the start with something and then you separate the parts using `,` and then they finish with something like
 
@@ -117,7 +118,7 @@ So I think I don’t have to guide you any more on this! Write things like:
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
-
+<br><br>
 ## Mathematical Expressions
 I believe if we write mathematical expressions with a space between all the operators like:
 
@@ -189,7 +190,7 @@ So with that do:
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
-
+<br><br>
 ## Names
 In Arendelle you can give **Spaces**, **Stored Spaces** and **Functions** names. naming this things are more often a very simple task like:
 
@@ -289,6 +290,7 @@ If you're a developer like me this kind of naming may look a bit strange and con
 
 And if you didn't well you're still free to do what ever you want! 
 
+<br><br>
 ## Functions
 I very much like to write function names like this:
 
@@ -312,6 +314,7 @@ And also function address:
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
 
+<br><br>
 ## Multi Line Comments
 Use the C way, However after stating asterisks use 3 spaces, Something like this:
 
@@ -325,7 +328,7 @@ Use the C way, However after stating asterisks use 3 spaces, Something like this
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
 
 
-
+<br><br>
 ## Arrays
 It's better if you init multi member arrays like this:
 
@@ -376,7 +379,7 @@ Also for nested ones use:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-
+<br><br>
 ## Nested grammars. 
 As I said before use 3 space tabs and this style:
 
