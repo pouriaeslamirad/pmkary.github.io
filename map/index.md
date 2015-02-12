@@ -22,7 +22,7 @@ title: Map
 - **[Thepa Archive](http://thepa.kary.us)** : In memory of the first days of thepa. A simulation of the first thepa BaseKit
 - **[2048](http://2048)** : Online (In browser) 2014 server
 
-- **[Search](https://www.google.com/cse/publicurl?cx=013903071433048024122:kqyn6zq0wro): A custom Google search engine for the all things me!
+- **[Search](https://www.google.com/cse/publicurl?cx=013903071433048024122:kqyn6zq0wro)**: A custom Google search engine for the all things me!
 
 ***
 
