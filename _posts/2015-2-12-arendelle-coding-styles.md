@@ -307,6 +307,27 @@ And also function address:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
+Now when you're making libraries do this kind of coding style. I like it very much:
+
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">!math. floor </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+
+And sometimes:
+
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #D60073;">!math.array. floor </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
 
 <br><br>
 ## Multi Line Comments
@@ -320,6 +341,29 @@ Use the C way, However after stating asterisks use 3 spaces, Something like this
 <span style="color: #A0A0A0;">/*<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;A&nbsp;multi&nbsp;line<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;comment&nbsp;must&nbsp;be&nbsp;something<br>&nbsp;&#42;&nbsp;&nbsp;&nbsp;very&nbsp;much&nbsp;like&nbsp;this<br>&nbsp;*/</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.05 DEV GENERATED CODE BLOCK-->
+
+
+But hey I hate this multi line comments! I have them in Arendelle because well they are C style and sometimes they are hany but when it comes tot he multi line comments use this system:
+
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;A&nbsp;multi&nbsp;line</span><br><span style="color: #A0A0A0;">//&nbsp;comment&nbsp;must&nbsp;be&nbsp;something</span><br><span style="color: #A0A0A0;">//&nbsp;very&nbsp;much&nbsp;like&nbsp;this</span><br><span style="color: #A0A0A0;">//</span><br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+
+As you see it's a much more beautiful way to wite comments, I use them most of the times for section flags like:
+
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
+<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;BODY</span><br><span style="color: #A0A0A0;">//</span><br><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br><br><span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;DONE</span><br><span style="color: #A0A0A0;">//</span><br></pre>
+
+<!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
+
 
 
 <br><br>
@@ -392,8 +436,9 @@ I think that was a good enough example!
 
 <br><br><br>
 
-# That's it!
+## That's it!
 I hope you like my style of coding. This is the actual way that Arendelle is made for and I hope you use it too. A part of my style is using **First Spacings**, **Standard Copyright** and **Done** comment which that are explained in the [Arendelle Book](http://web.arendelle.org/book). So I hope you use them too. Also gimme your suggestions on how to make this style better.
+
 
 
 
