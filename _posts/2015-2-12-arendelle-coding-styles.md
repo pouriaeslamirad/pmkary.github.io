@@ -189,7 +189,7 @@ In Arendelle you can give **Spaces**, **Stored Spaces** and **Functions** names.
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">(</span><span style="color: #4E00FC;">&nbsp;size&nbsp;</span><span style="color: #D60073;">,</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">)</span></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -312,7 +312,7 @@ Now when you're making libraries do this kind of coding style. I like it very mu
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">!math. floor </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -323,7 +323,7 @@ And sometimes:
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #D60073;">!math.array. floor </span><span style="color: #D60073;">(</span><span style="color: #D60073;">)</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -348,7 +348,7 @@ But hey I hate this multi line comments! I have them in Arendelle because well t
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;A&nbsp;multi&nbsp;line</span><br><span style="color: #A0A0A0;">//&nbsp;comment&nbsp;must&nbsp;be&nbsp;something</span><br><span style="color: #A0A0A0;">//&nbsp;very&nbsp;much&nbsp;like&nbsp;this</span><br><span style="color: #A0A0A0;">//</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
@@ -359,7 +359,7 @@ As you see it's a much more beautiful way to wite comments, I use them most of t
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
 
-<pre style="font-weight:bold; font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
+<pre style="font-family: Menlo, Monaco, 'Courier 10 Pitch', Monospace;">
 <span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;BODY</span><br><span style="color: #A0A0A0;">//</span><br><br>&nbsp;&nbsp;&nbsp;<span style="color: #D60073;">[</span>&nbsp;<span style="color: #6200A8;">10</span>&nbsp;<span style="color: #D60073;">,</span>&nbsp;pr&nbsp;<span style="color: #D60073;">]</span><br><br><span style="color: #A0A0A0;">//</span><br><span style="color: #A0A0A0;">//&nbsp;DONE</span><br><span style="color: #A0A0A0;">//</span><br></pre>
 
 <!-- CLIFF HIGHLIGHTER 0.06 DEV : GENERATED CODE BLOCK-->
