@@ -9,7 +9,9 @@ title: test
 <pre><code id="code-arendelle" class="arendelle">[ 23 , pr ]</pre></code>
 
 <script type="text/javascript">
-	$("arendelle").each(function() {s
-        $(this).html(highlight(this.text()));
-    });)
+	var highlight_elements = document.getElementsByClassName('arendelle');
+	for (var i = 0; i < highlight_elements.length; ++i) {
+    	var item = highlight_elements[i];  
+    	item.innerHTML = highlight(item.innerHTML);
+	}
 </script>
