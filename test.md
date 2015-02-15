@@ -8,6 +8,6 @@ title: test
 
 <script type="text/javascript">
 	$('.arendelle').each(function() {
-         $(this).html(mark(this.text()));
+         $(this).html(highlight(this.text()));
     });)
 </script>
