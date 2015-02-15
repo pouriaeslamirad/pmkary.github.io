@@ -3,6 +3,4 @@ layout: page
 title: test
 ---
 
-<pre><code class="arendelle">
-	[ , ]  { , }  < , >  ( , )
-</code></pre>
+<pre><code class="arendelle">[ , ]  { , }  &lt; , &gt;  ( , )</code></pre>
