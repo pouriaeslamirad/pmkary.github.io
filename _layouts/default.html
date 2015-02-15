@@ -72,7 +72,7 @@
     <!-- Implementation of marker.js -->
     <script type="text/javascript">
       $('code.arendelle').each(function(i, block) {
-         $(block).html(mark(block.html()));
+         $(this).html(mark(this.text()));
       });)
     </script>
   </body>
