@@ -1,4 +1,4 @@
----
+You can also use them like:---
 layout: page
 title: Arendelle Coding Styles
 ---
