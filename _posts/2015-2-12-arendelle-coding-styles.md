@@ -10,6 +10,7 @@ In it’s design I applied a very simple concept that I care so much and it’s 
 I don’t agree with all other people’s ideas and for example i like the idea of CamelCase and camelBack naming styles and till this day I always hated underlines in names. So I will explain you how to code in my style with Arendelle however as every documentation of Arendelle till this day is written by me only way you may know of Arendelle codes are most probably my way however I would like ver much to once and for all explain how my style and notation works (Have in mind that this Arendelle’s original way of coding is what I show you here)
 
 <br><br>
+
 ## Let’s start from basics
 First thing you write in Arendelle is commands and we write commands with no space like this
 
@@ -75,7 +76,7 @@ This way you give the `// ` kind of a new life and a new look. Then what come to
 
 In Arendelle all the grammars are same in design. All of the start with something and then you separate the parts using `,` and then they finish with something like:
 
-<pre><code class="arendelle">[ , ]  { , }  < , >  ( , )</code></pre>
+<pre><code class="arendelle">[ , ]  { , }  &lt; , &gt;  ( , )</code></pre>
 
 And the format for highlighting this codes are simple. You should do this:
 
