@@ -1,6 +1,6 @@
-You can also use them like:---
+---
 layout: page
-title: Arendelle Coding Styles
+title: Arendelle Coding Style
 ---
 
 When I made Arendelle I had this idea to make it’s language beautiful in design and when I say that I’m not mentioning the advances in technology but the code’s look itself. 
