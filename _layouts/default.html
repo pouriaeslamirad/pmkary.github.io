@@ -68,5 +68,12 @@
         <br><br>
       </footer>
     </div>
+
+    <!-- Implementation of marker.js -->
+    <script type="text/javascript">
+      $('code.arendelle').each(function(i, block) {
+         $(this).html(mark(this.html()));
+      });)
+    </script>
   </body>
 </html>
