@@ -27,10 +27,13 @@ title: Map
 ***
 
 ## Projects:
+
 - **[Arendelle Language](http://web.arendelle.org)**
 - **[Arendelle iOS](https://github.com/arendelle/iOS)**
 - **[Arendelle Android](https://github.com/arendelle/android)**
 - **[Arendelle's Website](https://github.com/arendelle/arendelle.github.io)**
+- **[MMD](https://github.com/arendelle/mmd)**
+- **[Marker.js](https://github.com/arendelle/marker.js)**
 - **[Marker](https://github.com/arendelle/marker)**
 - **[Swifty](https://github.com/arendelle/swifty)**
 - **[Core Arendelle](https://github.com/arendelle/swifty)**
@@ -64,6 +67,40 @@ title: Map
 - **[10PRINT](https://github.com/pmkary/10print.arendelle)**
 - **[Q-Bert](https://github.com/arendelle/qbert.arendelle)**
 - **[Lambda](https://github.com/arendelle/lambda.arendelle)**
+
+***
+
+## Arendelle Resources
+
+- **[Arendelle Coding Style](http://kary.us/2015/02/12/arendelle-coding-styles/)**
+- **[Arrays in Arendelle](http://kary.us/2015/01/29/arrays-in-arendelle/)**
+- **[Arendelle: random numbers included](http://old-2.kary.us/blog/arendelle-random-numbers-included)**
+- **[Arendelle apps now are just like other apps](http://old-2.kary.us/blog/arendelle-apps-now-are-just-like-other-apps)**
+- **[All new Arcade IDE 9.2 Interface](http://old-2.kary.us/blog/all-new-arcade-ide-92-interface)**
+- **[Arendelle: One powerful language for data visualizations](http://old-2.kary.us/blog/arendelle-one-powerful-language-for-data-visualizations)**
+
+
+***
+
+## Chapters of Arendelle Books
+
+- **[Hello, World](http://web.arendelle.org/book/hello,_world/README.html)**
+- **[Baics](http://web.arendelle.org/book/basics/README.html)**
+- **[Loops](http://web.arendelle.org/book/loop/README.html)**
+- **[Sources](http://web.arendelle.org/book/sources/README.html)**
+- **[Conditions](http://web.arendelle.org/book/conditions/README.html)**
+- **[Comments](http://web.arendelle.org/book/comments/README.html)**
+- **[Graphing Engine](http://web.arendelle.org/book/graphing_engine/README.html)**
+- **[Spaces](http://web.arendelle.org/book/spaces/README.html)**
+- **[Basic Calculator](http://web.arendelle.org/book/basic_calculator/README.html)**
+- **[Loops Again!](http://web.arendelle.org/book/loops_again/README.html)**
+- **[Stored Spaces](http://web.arendelle.org/book/stored_spaces/README.html)**
+- **[Functions](http://web.arendelle.org/book/functions/README.html)**
+- **[Playing with Basic Calculator](http://web.arendelle.org/book/playing_with_the_basic_calculator/README.html)**
+- **[Story of Micha](http://web.arendelle.org/book/story_of_micha/README.html)**
+- **[Programming a View](http://web.arendelle.org/book/programming_a_view/README.html)**
+- **[Reference Tables](http://web.arendelle.org/book/arendelle_cheat_sheet/README.html)**
+- **[Book Over](http://web.arendelle.org/book/bookover/README.html)**
 
 ***
 
