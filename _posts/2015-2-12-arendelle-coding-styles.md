@@ -48,7 +48,7 @@ Which when you use `#` header operator it actually puts it out of the screen. I 
 
 <pre><code class="arendelle">// When you write comments things that are
 // for the comment will come in 3 spaces so the
-// like it’s part of the text’s content not `// `
+// like it’s part of the text’s content not '// '
    [ 10 , pr ]</code></pre>
 
 This way you give the `// ` kind of a new life and a new look. Then what come to the mind is nested comments which is like vise:
@@ -70,8 +70,10 @@ This way you give the `// ` kind of a new life and a new look. Then what come to
 // done</code></pre>
 
 <br><br>
+
 ## Writing Grammars
-In Arendelle all the grammars are same in design. All of the start with something and then you separate the parts using `,` and then they finish with something like
+
+In Arendelle all the grammars are same in design. All of the start with something and then you separate the parts using `,` and then they finish with something like:
 
 <pre><code class="arendelle">[ , ]  { , }  < , >  ( , )</code></pre>
 
