@@ -10,6 +10,6 @@ title: test
 
 <script type="text/javascript">
 
-	$("#code-arendelle").html(highlight($("#code-arendelle").text()));
+	$("arendelle").html(highlight($("arendelle").text()));
 	
 </script>
