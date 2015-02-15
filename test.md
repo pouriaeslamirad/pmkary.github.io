@@ -9,7 +9,7 @@ title: test
 <pre><code id="code-arendelle" class="arendelle">[ 23 , pr ]</pre></code>
 
 <script type="text/javascript">
-
-	$("arendelle").html(highlight($("arendelle").text()));
-	
+	$("arendelle").each(function() {s
+        $(this).html(highlight(this.text()));
+    });)
 </script>
