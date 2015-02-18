@@ -30,7 +30,7 @@
     <a class="pilcrow" href="#section-1">&#182;</a>
   </div>
   
-<p>Copyright 2014 <a href="http://kary.us/">Pouya Kary</a>, All rights Reserved.<br>
+<p>Copyright 2014 <a href="http://kary.us/">Pouya Kary</a>, All rights Reserved.<br><br>
 Bulda was the first version of the language with only 5 commands for navigating and painting that I wrote in my CASIO Prizm (fx-CG10) calculator for fun.<br><br>Also it's good to know that Bulda was the troll who kept critoff and sven in Disney's full featured animation movie Frozen!<br><br><br></p>
 
 
@@ -114,7 +114,7 @@ Bulda was the first version of the language with only 5 commands for navigating 
   </div>
   
 <h2>Reading the command</h2>
-<p>To parse number digits as a sequence of numbers like strings. This function take two arguments: <code>num</code> and <code>ind</code> as <strong>number</strong> and <strong>index of number</strong>, It's like when you do: <code>array[ index ]</code> but like <code>number[ index ]</code>:
+<p>To parse number digits as a sequence of numbers like strings we have to use my <code>numberIndexReader</code> formula. This function take two arguments: <code>num</code> and <code>ind</code> as <strong>number</strong> and <strong>index of number</strong>, It's like when you do: <code>array[ index ]</code> but like <code>number[ index ]</code>:
 <img src="inSpaceStringReplacer.png" style="width:435px;">
 However nature of numbers are different to numbers string because strings are indexed left to right, However numbers are total opposite and they should start from index 1 not 0 so <code>123456[2]</code> must result <code>5</code>. the function works exactly like this: <code>f ( 123456, 3 ) = 4</code><br><br><br></p>
 
@@ -249,10 +249,7 @@ However nature of numbers are different to numbers string because strings are in
    
       ]
 
-
-
-
-
+      
 
 </pre></div>
 </td>
