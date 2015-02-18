@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>bulda.arendelle</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" media="all" href="locco.css" />
+  <script type="text/javascript" src="http://web.arendelle.org/developer/marker.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <table cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="docs">
+            <h1>
+              bulda.arendelle
+            </h1>
+          </th>
+          <th class="code">
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+<tr id="section-1">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-1">&#182;</a>
+  </div>
+  
+<p>Copyright 2014 <a href="http://kary.us/">Pouya Kary</a>, All rights Reserved.<br>
+Bulda was the first version of the language with only 5 commands for navigating and painting that I wrote in my CASIO Prizm (fx-CG10) calculator for fun.<br><br>Also it's good to know that Bulda was the troll who kept critoff and sven in Disney's full featured animation movie Frozen!<br><br><br></p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">   "The Bulda Language"
+</pre></div>
+</td>
+</tr><tr id="section-2">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-2">&#182;</a>
+  </div>
+  
+<p>Doing for ever</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">   ( WhileSign , 1 )
+   [ @WhileSign = 1 ,
+   
+</pre></div>
+</td>
+</tr><tr id="section-3">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-3">&#182;</a>
+  </div>
+  
+<p>Asking for the code:</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">         ( code , "---- λ ----")
+      
+</pre></div>
+</td>
+</tr><tr id="section-4">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-4">&#182;</a>
+  </div>
+  
+<p>Calculating the size</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">         ( size , Floor ( Log10 ( @code ) ) + 1 )
+      
+</pre></div>
+</td>
+</tr><tr id="section-5">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-5">&#182;</a>
+  </div>
+  
+<p>Controling sp</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">         ( i , 1 )
+         ( x , 0 )
+         ( y , 0 )
+      
+      
+</pre></div>
+</td>
+</tr><tr id="section-6">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-6">&#182;</a>
+  </div>
+  
+<h2>Main Bulda Interpreter</h2>
+<p>Main while</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">         { @code = 0 , ( size , 1 ) }
+
+         "The Bulda Language | Result for: \( @code )"
+   
+         [ @size ,
+               
+</pre></div>
+</td>
+</tr><tr id="section-7">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-7">&#182;</a>
+  </div>
+  
+<h2>Reading the command</h2>
+<p>To parse number digits as a sequence of numbers like strings. This function take two arguments: <code>num</code> and <code>ind</code> as <strong>number</strong> and <strong>index of number</strong>, It's like when you do: <code>array[ index ]</code> but like <code>number[ index ]</code>:
+<img src="inSpaceStringReplacer.png" style="width:435px;">
+However nature of numbers are different to numbers string because strings are indexed left to right, However numbers are total opposite and they should start from index 1 not 0 so <code>123456[2]</code> must result <code>5</code>. the function works exactly like this: <code>f ( 123456, 3 ) = 4</code><br><br><br></p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">               ( command , 
+                   
+                   Floor ( @code / ( 10 ^ @i - 1 ) )
+                   - Floor ( @code / ( 10 ^ @i ) ) * 10
+              
+               )
+      
+</pre></div>
+</td>
+</tr><tr id="section-8">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-8">&#182;</a>
+  </div>
+  
+<p><code>Up</code> command</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">               { @command = 1 ,
+                  ( y , -1 )
+               , 
+</pre></div>
+</td>
+</tr><tr id="section-9">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-9">&#182;</a>
+  </div>
+  
+<p><code>Right</code> commnad</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">                  { @command = 2 ,
+                     ( x , +1 )
+                  ,
+</pre></div>
+</td>
+</tr><tr id="section-10">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-10">&#182;</a>
+  </div>
+  
+<p><code>Left</code> commnad</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">                     { @command = 3 ,
+                        ( x , -1 )
+                     ,
+</pre></div>
+</td>
+</tr><tr id="section-11">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-11">&#182;</a>
+  </div>
+  
+<p><code>Down</code> command</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">                        { @command = 4 ,
+                           ( y , +1 )
+                        ,        
+</pre></div>
+</td>
+</tr><tr id="section-12">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-12">&#182;</a>
+  </div>
+  
+<p><code>Paint</code> command</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">                           { @command = 5 ,
+                                    
+                              i [ @x * 2 , r ]
+                              [ @y , d ] prp
+                           ,
+</pre></div>
+</td>
+</tr><tr id="section-13">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-13">&#182;</a>
+  </div>
+  
+<p><code>Exit</code> command</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">                              { @command = 6 ,
+                               ( WhileSign , 0 )     
+                              }
+                           }                   
+                        }
+                     }
+                  }
+               }
+   
+</pre></div>
+</td>
+</tr><tr id="section-14">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-14">&#182;</a>
+  </div>
+  
+<p>Going to the next char</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">               ( i , +1 )
+   
+         ]
+   
+</pre></div>
+</td>
+</tr><tr id="section-15">
+<td class="docs">
+  <div class="pilwrap">
+    <a class="pilcrow" href="#section-15">&#182;</a>
+  </div>
+  
+<p>Waiting to see the result</p>
+
+
+</td>
+<td class="code">
+  <div class="highlight"><pre class="arendelle">         s
+   
+   ]
+
+
+</pre></div>
+</td>
+</tr></tbody>
+    </table>
+  </div>
+  <script type="text/javascript">markerInitHighlightingOnLoad()</script>
+</body>
+</html>
