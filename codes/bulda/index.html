@@ -31,7 +31,7 @@
   </div>
   
 <p>Copyright 2014 <a href="http://kary.us/">Pouya Kary</a>, All rights Reserved.<br><br>
-Bulda was the first version of the language with only 5 commands for navigating and painting that I wrote in my CASIO Prizm (fx-CG10) calculator for fun.<br><br>Also it's good to know that <a href="http://frozen.wikia.com/wiki/Bulda">Bulda</a> was the troll who kept <a href="http://frozen.wikia.com/wiki/Kristoff_Bjorgman">Kritoff</a> and <a href="http://frozen.wikia.com/wiki/Sven">Sven</a> in Disney's full featured animation movie Frozen!<br><br><br></p>
+Bulda was the first version of the language with only 5 commands for navigating and painting that I wrote in my CASIO Prizm (fx-CG10) calculator for fun.<br><br>Also it's good to know that <a href="http://frozen.wikia.com/wiki/Bulda">Bulda</a> was the troll who adopted <a href="http://frozen.wikia.com/wiki/Kristoff_Bjorgman">Kritoff</a> and <a href="http://frozen.wikia.com/wiki/Sven">Sven</a> in Disney's full featured animation movie Frozen!<br><br><br></p>
 
 
 </td>
@@ -45,7 +45,7 @@ Bulda was the first version of the language with only 5 commands for navigating 
     <a class="pilcrow" href="#section-2">&#182;</a>
   </div>
   
-<p>Asking for the code:</p>
+<p>Prompt:</p>
 
 
 </td>
@@ -60,7 +60,7 @@ Bulda was the first version of the language with only 5 commands for navigating 
     <a class="pilcrow" href="#section-3">&#182;</a>
   </div>
   
-<p>Calculating the size</p>
+<p>Calculating the number of digits using this simple formula: <code>digits(x) = floor( log10 ( x )) + 1</code></p>
 
 
 </td>
@@ -75,7 +75,7 @@ Bulda was the first version of the language with only 5 commands for navigating 
     <a class="pilcrow" href="#section-4">&#182;</a>
   </div>
   
-<p>Controlling spaces</p>
+<p>Controlling spaces: <code>x</code> and <code>y</code> are for coordinates and <code>i</code> is index of the current char.</p>
 
 
 </td>
@@ -94,7 +94,7 @@ Bulda was the first version of the language with only 5 commands for navigating 
   </div>
   
 <h2>Main Bulda Interpreter</h2>
-<p>Main while</p>
+<p>If the code be zero there will be problems with <code>digits(x)</code> so we handle it ourselves</p>
 
 
 </td>
@@ -114,9 +114,9 @@ Bulda was the first version of the language with only 5 commands for navigating 
   </div>
   
 <h2>Reading the command</h2>
-<p>To parse number digits as a sequence of numbers like strings we have to use my <code>numberIndexReader</code> formula. This function take two arguments: <code>num</code> and <code>ind</code> as <strong>number</strong> and <strong>index of number</strong>, It's like when you do: <code>array[ index ]</code> but like <code>number[ index ]</code>:
-<img src="inSpaceStringReplacer.png" style="width:435px;">
-However nature of numbers are different to numbers string because strings are indexed left to right, However numbers are total opposite and they should start from index 1 not 0 so <code>123456[2]</code> must result <code>5</code>. the function works exactly like this: <code>f ( 123456, 3 ) = 4</code><br><br><br></p>
+<p>To parse number digits as a sequence of numbers like strings we have to use my <code>numberIndexReader</code> formula. This function take two arguments: <code>num</code> and <code>ind</code> as <strong>number</strong> and <strong>index of number</strong>, It's like when you do: <code>array[ index ]</code> but like <code>number[ index ]</code>:<br><br>
+<img src="inSpaceStringReplacer.png" style="width:435px;"><br><br>
+However nature of numbers are different to numbers string because strings are indexed left to right, However numbers are total opposite and they should start from index 1 not 0 so <code>123456[2]</code> must result <code>5</code>. the function works exactly like this:<br> <code>f ( 123456, 3 ) = 4</code><br><br><br></p>
 
 
 </td>
@@ -210,22 +210,7 @@ However nature of numbers are different to numbers string because strings are in
                            i [ @x * 2 , r ]
                            [ @y , d ] prp
                         ,
-</pre></div>
-</td>
-</tr><tr id="section-12">
-<td class="docs">
-  <div class="pilwrap">
-    <a class="pilcrow" href="#section-12">&#182;</a>
-  </div>
-  
-<p><code>Exit</code> command</p>
 
-
-</td>
-<td class="code">
-  <div class="highlight"><pre class="arendelle">                           { @command = 6 ,
-                              ( WhileSign , 0 )     
-                           }
                         }                   
                      }
                   }
@@ -234,10 +219,10 @@ However nature of numbers are different to numbers string because strings are in
    
 </pre></div>
 </td>
-</tr><tr id="section-13">
+</tr><tr id="section-12">
 <td class="docs">
   <div class="pilwrap">
-    <a class="pilcrow" href="#section-13">&#182;</a>
+    <a class="pilcrow" href="#section-12">&#182;</a>
   </div>
   
 <p>Going to the next char</p>
