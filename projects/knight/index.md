@@ -40,7 +40,7 @@ Designing a program to generate the path can make this even more fun and well th
 
 **NOTE** : Following source code is a program written in [Arendelle](http://web.arendelle.org) Language, to fully understand the code you have to be able to read Arendelle, If you have to background in Arendelle I to read [this book](http://web.arendelle.org/book/) to learn Arendelle.<br><br>
 
-**NOTE** : Also to run this app you'll need an Arendelle compiler or interpreter with support of user input. So for now the only way of using it with input is by using [JArendelle](https://github.com/arendelle/jarendelle) as a GUI version. or if you want to play with it on youe mobile manualy change the <code class="arendelle">( long , "Enter a size for the board" )</code> in the 18th line to a size you want for example `21`: <code class="arendelle">( long , 21 )</code><br><br>
+**NOTE** : Also to run this app you'll need an Arendelle compiler or interpreter with support of user input. So for now the only way of using it with input is by using [JArendelle](https://github.com/arendelle/jarendelle) as a GUI version. or if you want to play with it on youe mobile manualy change the <code class="arendelle">( long , "Enter a size for the board" )</code> in the 18th line to a size you want for example `21` : <code class="arendelle">( long , 21 )</code><br><br>
 
 **NOTE** : Software is available from [GitHub](https://github.com/pmkary/knight)<br><br><br>
 
