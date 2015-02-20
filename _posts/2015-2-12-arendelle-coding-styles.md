@@ -172,6 +172,12 @@ And sometimes:
 
 <pre class="arendelle">!math.array. floor ()</pre>
 
+Also something that is very important about functions is their special comments. To use function comments use this way:
+
+<pre class="arendelle">!func ( init with number: 12, and number: 5 )</pre>
+
+Write them lowercase and don't frogot the space after `(` and `,`. So like the example I showed you!
+
 <br><br>
 ## Multi Line Comments
 Use the C way, However after stating asterisks use 3 spaces, Something like this:
@@ -226,10 +232,13 @@ Also for nested ones use:
 As I said before use 3 space tabs and this style:
 
 <pre class="arendelle">( line , 0 )
+
 [ #j,
+
     i [ @line , d ] 
     ( line , +1 )
-      { #x < #y , p } r
+    { #x < #y , p } r
+
 ]</pre>
 
 I think that was a good enough example!
