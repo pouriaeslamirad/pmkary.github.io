@@ -19,11 +19,14 @@ title: Map
 
 ### From my curent blog
 
-{% for post in site.related_posts %}
-	<a href="http://kary.us/{{ post.url }}">
-		{{ post.title }}
-	</a>
-{% endfor %}
+- **[Arendelle Coding Style](http://kary.us/2015/02/12/arendelle-coding-styles/)**
+- **[Arrays in Arendelle](http://kary.us/2015/01/29/arrays-in-arendelle/)**
+- **[Sweet 18](http://kary.us/2015/01/09/sweet-18/)**
+- **[Always the good old days!](http://kary.us/2014/11/24/always-the-good-old-days/)**
+- **[What is wrong with design?](http://kary.us/2014/09/30/What-is-actually-wrong-with-design/)**
+- **[Can I install it please?](http://kary.us/2014/09/09/Can-I-install-it-please/)**
+- **[The Wonder World of 10 PRINT](http://kary.us/2014/09/07/theWonderWorldOf10Print/)**
+- **[All new blog](http://kary.us/2014/09/05/1/)**
 
 ### From my old blog
 
