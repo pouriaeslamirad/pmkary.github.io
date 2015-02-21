@@ -20,9 +20,9 @@ title: Map
 ### From my curent blog
 
 {% for post in site.related_posts %}
-
-	<a href="http://kary.us/{{ post.url }}">{{ post.title }}</a>
-
+	<a href="http://kary.us/{{ post.url }}">
+		{{ post.title }}
+	</a>
 {% endfor %}
 
 ### From my old blog
