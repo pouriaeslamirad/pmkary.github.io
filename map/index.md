@@ -15,14 +15,38 @@ title: Map
 
 ***
 
+## Blogs:
+
+### From my curent blog
+
+{% for post in site.related_posts %}
+
+	<a href="http://kary.us/{{ post.url }}">{{ post.title }}</a>
+
+{% endfor %}
+
+### From my old blog
+
+- **[Arendelle: random numbers included](http://old-3.kary.us/blog/arendelle-random-numbers-included)**
+- **[Once upon a time I was happy with my Ubuntu](http://old-3.kary.us/blog/once-upon-a-time-i-was-happy-with-my-ubuntu)**
+- **[Arendelle apps now are just like other apps](http://old-3.kary.us/blog/arendelle-apps-now-are-just-like-other-apps)**
+- **[All new Arcade IDE 9.2 Interface](http://old-3.kary.us/blog/all-new-arcade-ide-92-interface)**
+- **[Arendelle: One powerful language for data visualizations](http://old-3.kary.us/blog/arendelle-one-powerful-language-for-data-visualizations)**
+
+### From LinuxReview ( Persian )
+
+- **[Programming in Android](http://linuxreview.ir/1391/05/programming-on-android/)**
+- **[Haiku: A free operating system](http://linuxreview.ir/1391/04/%d9%87%d8%a7%db%8c%da%a9%d9%88-%d8%b3%db%8c%d8%b3%d8%aa%d9%85%e2%80%8c%d8%b9%d8%a7%d9%85%d9%84%db%8c-%d8%a2%d8%b2%d8%a7%d8%af/)**
+
+***
+
 ## Services
 
-- **[Karion](http://kary.us/karion/)** : Online homepage of my time system. A very smarter way to keep time
-- **[Kary HOT 500](http://kary.us/hot/)** : Funny collaboration project to collect and rank the top 500 hottest female celebrities
-- **[Thepa Archive](http://thepa.kary.us)** : In memory of the first days of thepa. A simulation of the first thepa BaseKit
-- **[2048](http://2048)** : Online (In browser) 2014 server
-
-- **[Search](https://www.google.com/cse/publicurl?cx=013903071433048024122:kqyn6zq0wro)**: A custom Google search engine for the all things me!
+- **[Karion](http://kary.us/karion/)** : Homepage of Karion: A very smarter way to keep time
+- **[Kary HOT 500](http://kary.us/hot/)** : Collecting a list of all Hot female celebrities
+- **[Thepa Archive](http://thepa.kary.us)** : Simulation of first thepa's website
+- **[2048](http://2048.kary.us/)** : Online (In browser) 2014 game
+- **[Search](https://www.google.com/cse/publicurl?cx=013903071433048024122:kqyn6zq0wro)**: Search in all things Kary!
 
 ***
 
@@ -62,7 +86,7 @@ title: Map
 
 ## Annotated Codes
 
--- **[Bulda Code](http://kary.us/codes/bulda)**
+- **[Bulda Language](http://kary.us/codes/bulda)**
 
 ***
 
