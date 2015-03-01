@@ -21,7 +21,7 @@ From now on you can debug your Arendelle code for real. Before this we had a sys
 
 	"Fibonacci at index: \( @f? ) is: \( @f[ @f? - 1 ] )"
 ]
-<pre>
+</pre>
 
 
 <br>If you're using [Swifty](https://github.com/arendelle/swifty) there is the feature there as you can see in the image. And it will be there for Android and iOS too, Very soon!
