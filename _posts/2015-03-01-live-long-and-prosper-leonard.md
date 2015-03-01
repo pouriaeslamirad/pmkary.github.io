@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Live Long and Prosper Leonerd
+title: Live Long and Prosper Leonard
 ---
 
 ![](http://kary.us/Graphics/Blog/6992/LLAP.png)

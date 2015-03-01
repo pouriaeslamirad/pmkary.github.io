@@ -1,4 +1,4 @@
----
+---o
 layout: page
 title: Map
 ---
@@ -19,7 +19,7 @@ title: Map
 
 ### From my curent blog
 
-- **[Live Long and Prosper Leonerd](http://kary.us/2015/03/01/live-long-and-prosper-leonard/)**
+- **[Live Long and Prosper Leonard](http://kary.us/2015/03/01/live-long-and-prosper-leonard/)**
 - **[New Debugging in Arendelle](http://kary.us/2015/02/28/new-debugging-in-arendelle/)**
 - **[Arendelle Coding Style](http://kary.us/2015/02/12/arendelle-coding-styles/)**
 - **[Arrays in Arendelle](http://kary.us/2015/01/29/arrays-in-arendelle/)**
