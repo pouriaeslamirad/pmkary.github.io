@@ -92,7 +92,9 @@ title: Map
 
 ## Annotated Codes
 
-- **[Bulda Language](http://kary.us/codes/bulda)**
+- **[Q-Bert](http://kary.us/codes/qbert/)**
+- **[Bulda Language](http://kary.us/codes/bulda/)**
+- **[LLAP](http://kary.us/codes/llap/)**
 
 ***
 
