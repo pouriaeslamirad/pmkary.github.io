@@ -1,4 +1,7 @@
-# I ♥︎ UNIX I
+---
+layout: post
+title: I ♥︎ UNIX I
+---
 
 I love UNIX, It's the most beautiful system I've ever seen. It's clear, It's brilliant, It's a LEGO. You have some tools. You LEGO this tools tighter and you make something you want. You can script all your apps together… So much possibilities! So many of the UNIXians that I know write in their blogs why they love UNIX or some of them write especially for GNU/Linux. But I love UNIX and I'm going to write about UNIX!
 
