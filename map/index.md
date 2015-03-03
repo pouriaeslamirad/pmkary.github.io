@@ -19,6 +19,7 @@ title: Map
 
 ### From my curent blog
 
+- **[Specification 2XII](http://kary.us/2015/03/04/specification-2xii/)
 - **[I ♥︎ UNIX I](http://kary.us/2015/03/02/i-heart-unix-i/)**
 - **[Live Long and Prosper Leonard](http://kary.us/2015/03/01/live-long-and-prosper-leonard/)**
 - **[New Debugging in Arendelle](http://kary.us/2015/02/28/new-debugging-in-arendelle/)**
