@@ -3,7 +3,7 @@ layout: post
 title: Specification 2XII
 ---
 
-Today [Monodraw Beta](http://monodraw.helftone.com) was released (Yes great job guys). Also I was working on a standard for Arendelle called **Specification 2XII**. The 2XII (Aka: v2.7) is a document that explains everything about behavior of Arendelle so the core developer who wants to develop compiler for Arendelle know what to do. So I was testing Monodraw that I though how about creating a text based diagram representation of a standard Arendelle engine. So I made this diagram here. Please notice that because of it's ASCII art nature you have to read this page in your desktop or a tablet with screen width greater than 720 pixel.
+Today [Monodraw Beta](http://monodraw.helftone.com) was released (Yes great job guys). Also I was working on a standard for Arendelle called **Specification 2XII**. The 2XII (Read it 2-12) is a document that explains everything about behavior of Arendelle so the core developer who wants to develop compiler for Arendelle know what to do. So I was testing Monodraw that I though how about creating a text based diagram representation of a standard Arendelle engine. So I made this diagram here. Please notice that because of it's ASCII art nature you have to read this page in your desktop or a tablet with screen width greater than 720 pixel.
 
 ```
 ┌────────────────────────────────────────────────────────────────────┐
