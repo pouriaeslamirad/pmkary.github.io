@@ -25,7 +25,7 @@ Today [Monodraw Beta](http://monodraw.helftone.com) was released (Yes great job 
            │        │ ┌────────────┐  ┌────────────┐  ┌────────────┐ │
            │        │ │            │  │            │  │            │ │
            │        │ │            │  │            │  │            │ │
-           │        │ │ OpenClose  │  │  One Part  │  │  One Part  │ │
+           │        │ │ OpenClose  │  │  One Part  │  │  Function  │ │
            │        │ │   Lexer    │  │   Lexer    │  │   Lexer    │ │
 ┌──────────┴──┐     │ │            │  │            │  │            │ │
 │ Init Point  │     │ │            │  │            │  │            │ │
