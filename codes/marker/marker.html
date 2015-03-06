@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>marker.js</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+  <link rel="stylesheet" media="all" href="docco.css" />
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    
+    <ul class="sections">
+        
+          <li id="title">
+              <div class="annotation">
+                  <h1>marker.js</h1>
+              </div>
+          </li>
+        
+        
+        
+        <li id="section-1">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-1">&#182;</a>
+              </div>
+              
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-2">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-2">&#182;</a>
+              </div>
+              <p>&copy; Copyright 2015 Pouya Kary. <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x6b;&#x40;&#97;&#x72;&#x65;&#110;&#100;&#101;&#108;&#x6c;&#x65;&#x2e;&#x6f;&#114;&#x67;">&#x6b;&#x40;&#97;&#x72;&#x65;&#110;&#100;&#101;&#108;&#x6c;&#x65;&#x2e;&#x6f;&#114;&#x67;</a></p>
+<p>A fast marker to highlight Arendelle codes on the web. 
+It’s designed to work just like <a href="https://highlightjs.org">highlight.js</a> all you
+have to do to get it to work is to simply add this lines to your website:</p>
+<pre><code>&lt;script src=<span class="hljs-string">"http://web.arendelle.org/developer/marker.js"</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span>&gt;</span><span class="javascript">markerInitHighlightingOnLoad()</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></span>
+</code></pre><p>And then simply add class <code>arendelle</code> to your codes:</p>
+<pre><code>&lt;pre <span class="hljs-keyword">class</span>=<span class="hljs-string">"arendelle"</span>&gt;[ <span class="hljs-number">10</span> , pr ]&lt;<span class="hljs-regexp">/pre&gt;</span>
+</code></pre>
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-keyword">var</span> marker_version = <span class="hljs-string">'1.12'</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-3">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-3">&#182;</a>
+              </div>
+              <p><br><br></p>
+<h2 id="marker-init-highlighting-on-load">marker Init Highlighting On Load</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-4">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-4">&#182;</a>
+              </div>
+              <p>This function highlights all the tags classified as <code>arendelle</code> like the <code>initHighlightingOnLoad</code> of highlight.js</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">markerInitHighlightingOnLoad</span> <span class="hljs-params">()</span> </span>{
+
+	<span class="hljs-keyword">var</span> elements = <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">'arendelle'</span>);
+
+	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; elements.length; i++ ) {
+
+		elements[i].innerHTML = markerHighlight(elements[i].innerHTML);
+
+	}
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-5">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-5">&#182;</a>
+              </div>
+              <h2 id="marker-highlight">marker Highlight</h2>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-6">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-6">&#182;</a>
+              </div>
+              <p>This is where the magic happens. You pass it a code like <code>[ 10 , pr ]</code> and it generates you highlighted code for that<br><br><br></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">markerHighlight</span> <span class="hljs-params">(text)</span> </span>{</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-7">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-7">&#182;</a>
+              </div>
+              <h3 id="first-info-init">First Info Init</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-8">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-8">&#182;</a>
+              </div>
+              <p>Theme colors</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	<span class="hljs-keyword">var</span> grammar_color		= <span class="hljs-string">"D60073"</span>;
+	<span class="hljs-keyword">var</span> comment_color 		= <span class="hljs-string">"A0A0A0"</span>;
+	<span class="hljs-keyword">var</span> func_comment_color		= <span class="hljs-string">"8C007F"</span>;
+	<span class="hljs-keyword">var</span> data_color			= <span class="hljs-string">"4E00FC"</span>;
+	<span class="hljs-keyword">var</span> string_color		= <span class="hljs-string">"BD00AD"</span>;
+	<span class="hljs-keyword">var</span> number_color		= <span class="hljs-string">"6200A8"</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-9">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-9">&#182;</a>
+              </div>
+              <p>Parts of span tag so we can do : <code>start + COLOR + middle + CODE + end</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	<span class="hljs-keyword">var</span> start   = <span class="hljs-string">'&lt;span style="color: #'</span>;
+	<span class="hljs-keyword">var</span> middle  = <span class="hljs-string">';"&gt;'</span>;
+	<span class="hljs-keyword">var</span> end     = <span class="hljs-string">'&lt;/span&gt;'</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-10">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-10">&#182;</a>
+              </div>
+              <p>Where we keep the final result</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	<span class="hljs-keyword">var</span> result = <span class="hljs-string">''</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-11">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-11">&#182;</a>
+              </div>
+              <p>Because we can’t use &lt; and &gt; in HTML, We have to write an
+Arendelle code like <code>[ @x &lt; 10 , pr ]</code> this way: <code>[ @x &amp;lt; 10 , pr ]</code>
+Now this is pure JavaScript not HTML! So we can transform the special
+characters back to Arendelle way.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	text = text.replace(<span class="hljs-string">'&amp;lt;'</span>,<span class="hljs-string">'&lt;'</span>).replace(<span class="hljs-string">'&amp;gt;'</span>,<span class="hljs-string">'&gt;'</span>);</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-12">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-12">&#182;</a>
+              </div>
+              <h3 id="body">Body</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-13">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-13">&#182;</a>
+              </div>
+              <p>Here we read the code char by char and initialize highlighting if necessary. 
+Also we keep the current char in the <code>reading_char</code> </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	<span class="hljs-keyword">for</span> ( <span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; text.length; i++ ) {
+
+		<span class="hljs-keyword">var</span> reading_char = text[i];
+
+		<span class="hljs-keyword">switch</span> (reading_char) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-14">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-14">&#182;</a>
+              </div>
+              <h3 id="grammars">Grammars</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-15">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-15">&#182;</a>
+              </div>
+              <p>Grammars in Arendelle things starting with something, divided by a ‘,’
+and then ending with something else like: <code>( part1, part2, part3 )</code> All
+we have to do here is to highlight their grammar parts: <code>(</code>, <code>,</code> , <code>)</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'['</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">']'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">')'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'{'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'}'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">';'</span>:
+
+				result += start + grammar_color + middle + reading_char + end;
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-16">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-16">&#182;</a>
+              </div>
+              <h3 id="special-characters">Special Characters</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-17">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-17">&#182;</a>
+              </div>
+              <p>Now it’s time to change back the special characters we converted from
+HTML to Arendelle back to HTML but in pretty highlighted way!</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'&lt;'</span>:
+				result += start + grammar_color + middle + <span class="hljs-string">"&amp;lt;"</span> + end;
+				<span class="hljs-keyword">break</span>;
+
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'&gt;'</span>:
+				result += start + grammar_color + middle + <span class="hljs-string">"&amp;gt;"</span> + end;
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-18">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-18">&#182;</a>
+              </div>
+              <h4 id="situation-here-">Situation here!</h4>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-19">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-19">&#182;</a>
+              </div>
+              <p>Our system will identify all data using their signs such as <code>@</code>, <code>#</code>, <code>$</code>… 
+But there is one special situation where we init spaces: <code>( space name , data )</code>
+in this special case we need to highlight <code>space name</code> as data. In order to do this
+we first have to take care that the it’s a space initializer not a function or something’s
+parentheses. so we have to highlight space in <code>( space , 10)</code> but not in <code>!func(space)</code>.<br><br>
+There is also this other thing here that that is function comments like: <code>!func(comment:something)</code>.
+They also start with <code>(</code> and sometimes <code>,</code> and then finish with an <code>:</code> instead of <code>)</code> or <code>,</code> So we
+have to take care of them too. Good news is we can use one simple path to have them both.<br><br></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'('</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">','</span>:</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-20">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-20">&#182;</a>
+              </div>
+              <p>We first begin with storing the starting char:
+<br><span style="font-family:monospace; background-color:#FFFF00;">(</span><span style="font-family:monospace;"> space , something )</span><br>
+So then we can read the <code>space_init_string</code>:
+<br><span style="font-family:monospace;">( <span style="font-family:monospace; background-color:#FFFF00;">space</span> , something )</span><br></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				result += start + grammar_color + middle + reading_char + end;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-21">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-21">&#182;</a>
+              </div>
+              <p>We use <code>space_init_string</code> to store the special part we want to highlight</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				<span class="hljs-keyword">var</span> space_init_string = <span class="hljs-string">''</span>;
+				<span class="hljs-keyword">var</span> while_control_6   = <span class="hljs-literal">true</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-22">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-22">&#182;</a>
+              </div>
+              <p>Going to the next char</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				i++;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-23">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-23">&#182;</a>
+              </div>
+              <p>Now. We see what characters are in <code>/[\.a-z0-9 ]/i</code> which means all numbers,
+dots. and basic Latin characters: The standard space name format we’re looking
+for. As soon as the character we’re reading be not a member this regex we’re sure
+that we’ve found our <code>space_init_string</code>: </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_6 ) {
+
+					<span class="hljs-keyword">if</span> ( <span class="hljs-regexp">/[\.a-z0-9 ]/i</span>.test( text[ i ] ) ) {
+
+						space_init_string += text[ i ];
+
+					} <span class="hljs-keyword">else</span> {
+
+						while_control_6 = <span class="hljs-literal">false</span>;
+						i--;
+
+					}
+
+					i++;
+				}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-24">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-24">&#182;</a>
+              </div>
+              <p>So first thing we have to do here is to check if our text is standard space init / funciton
+comment or not. Then we can identify them</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				<span class="hljs-keyword">if</span> ( <span class="hljs-regexp">/^ *[a-z][\.a-z0-9 ]*$/i</span>.test(space_init_string) ) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-25">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-25">&#182;</a>
+              </div>
+              <p>So if the text ended with <code>:</code> we can be sure that it was a function comment and then
+we can simply highlight it.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					<span class="hljs-keyword">if</span> ( text[i] == <span class="hljs-string">':'</span> ) {
+
+						result += start + func_comment_color + middle + space_init_string + <span class="hljs-string">':'</span> + end;
+						i++;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-26">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-26">&#182;</a>
+              </div>
+              <p>Else way we have to see if it was a space init. All we have to do is to
+check if the <code>reading_char</code> was <code>(</code> and also the ending chars were <code>,</code> and <code>)</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( reading_char == <span class="hljs-string">"("</span> &amp;&amp; text[i] == <span class="hljs-string">','</span> || reading_char == <span class="hljs-string">"("</span> &amp;&amp; text[i] == <span class="hljs-string">')'</span>) {
+
+						result += start + data_color + middle + space_init_string + end;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-27">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-27">&#182;</a>
+              </div>
+              <p>Else way we had it all wrong so will treat the <code>space_init_string</code> as normal text
+and we send it to a normal highlight</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					} <span class="hljs-keyword">else</span> {
+
+						result += markerHighlight (space_init_string);
+
+					}
+
+				} <span class="hljs-keyword">else</span> {
+
+					result += markerHighlight (space_init_string);
+
+				}
+				
+				i--;
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-28">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-28">&#182;</a>
+              </div>
+              <h3 id="numerics">NUMERICS</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-29">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-29">&#182;</a>
+              </div>
+              <p>We take care of numbers here. Simply like what we did before </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'0'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'1'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'2'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'3'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'4'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'5'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'6'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'7'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'8'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'9'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'.'</span>:
+
+				<span class="hljs-keyword">var</span> number_string   = <span class="hljs-string">''</span>;
+				<span class="hljs-keyword">var</span> while_control_1 = <span class="hljs-literal">true</span>;
+
+				number_string += reading_char; i++;
+
+				<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_1 ) {
+
+					<span class="hljs-keyword">if</span> ( <span class="hljs-regexp">/[0-9\.]/</span>.test( text[ i ] ) ) {
+
+						number_string += text[ i ];
+
+					} <span class="hljs-keyword">else</span> {
+
+						while_control_1 = <span class="hljs-literal">false</span>;
+						i--;
+						<span class="hljs-keyword">break</span>;
+
+					}
+
+					i++;
+				}
+
+				result += start + number_color + middle + number_string + end;
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-30">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-30">&#182;</a>
+              </div>
+              <h3 id="data-formats">Data Formats</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-31">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-31">&#182;</a>
+              </div>
+              <p><strong>Spaces</strong>, <strong>Sources</strong>, <strong>Functions</strong> and <strong>Stored Spaces</strong> are being identified here:</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'@'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'#'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'!'</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'$'</span>:
+
+				<span class="hljs-keyword">var</span> data_string      = <span class="hljs-string">''</span>;
+				<span class="hljs-keyword">var</span> while_control_2  = <span class="hljs-literal">true</span>;
+
+				data_string += reading_char; i++;
+				
+				<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_2 ) {
+
+					<span class="hljs-keyword">if</span> ( <span class="hljs-regexp">/[a-z0-9\?\. ]/i</span>.test( text[ i ] ) ) {
+
+						data_string += text[ i ];
+
+					} <span class="hljs-keyword">else</span> {
+
+						while_control_2 = <span class="hljs-literal">false</span>;
+						i--;
+						<span class="hljs-keyword">break</span>;
+
+					}
+
+					i++;
+				}
+
+				result += start + data_color + middle + data_string + end; 
+
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-32">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-32">&#182;</a>
+              </div>
+              <h3 id="comments">Comments</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-33">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-33">&#182;</a>
+              </div>
+              <p>Arendelle supports 3 commenting system: <strong>Slash-Star</strong>, <strong>Slash-Slash</strong>, <strong>Function-Comment</strong>.
+We took care of Function-Comments in the “<a href="#section-16">Special Situation</a>“ that’s why our job
+is easier here. We only have to take care about C style comments: <code>/* comment */</code> and <code>// comment</code>
+<br><br>Now the thing that makes it too easy is they both start with <code>/</code> and thanks to that we don’t
+need to change any architecture, char-by-char still works</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'/'</span>:
+
+				<span class="hljs-keyword">var</span> comment_string = <span class="hljs-string">''</span>;
+				
+				<span class="hljs-keyword">if</span> ( i &lt; text.length - <span class="hljs-number">1</span> ) {
+
+					i++;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-34">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-34">&#182;</a>
+              </div>
+              <p>So we now know that we have our first <code>/</code>, Next thing we should do is to determine
+what the next char is, If it was <code>/</code> we know it’s <strong>slash-slash</strong>, if it was <code>*</code> we
+know we’re looking for a <strong>slash-star</strong> and if none of those it was a normal divide
+operator so we leave the way it was.</p>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-35">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-35">&#182;</a>
+              </div>
+              <p><strong>Slash-Slash</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'/'</span> ) {
+
+						comment_string = <span class="hljs-string">'//'</span>; i++;
+
+						<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; text[ i ] !== <span class="hljs-string">'\n'</span> ) {
+
+							comment_string += text[ i ];
+							i++;
+
+						}
+
+						result += start + comment_color + middle + comment_string + end;
+						i--;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-36">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-36">&#182;</a>
+              </div>
+              <p><strong>slash-start</strong></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'*'</span> ) {
+
+						i++; comment_string  = <span class="hljs-string">'/*'</span>; 
+						<span class="hljs-keyword">var</span>  while_control_5 = <span class="hljs-literal">true</span>;
+
+						<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_5 ) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-37">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-37">&#182;</a>
+              </div>
+              <p><strong>slash-start</strong> ends with <code>*/</code>. Because of the nature of our char-by-char
+system we have to still read char by char and when we reached Astrix find what’s
+the next character of it, If it was <code>/</code> we’re done else way we still have to
+continue reading. </p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+							<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'*'</span> &amp;&amp; i &lt; text.length -<span class="hljs-number">1</span> ) {
+
+								i++;
+								<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'/'</span> ) {
+
+									comment_string += <span class="hljs-string">'*/'</span>;
+									while_control_5 = <span class="hljs-literal">false</span>;
+
+								} <span class="hljs-keyword">else</span> {
+									comment_string += <span class="hljs-string">'*'</span> + text[i];
+									i++;
+								}						
+
+							} <span class="hljs-keyword">else</span> {
+								comment_string += text[ i ];
+								i++;
+							}
+						}
+
+						result += start + comment_color + middle + comment_string + end;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-38">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-38">&#182;</a>
+              </div>
+              <p>Okay it was just a simple diver</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+					} <span class="hljs-keyword">else</span> {
+						result += <span class="hljs-string">'/'</span> + text[ i ];
+					}
+
+				} <span class="hljs-keyword">else</span> {
+					result += <span class="hljs-string">'/'</span>;
+				}
+
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-39">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-39">&#182;</a>
+              </div>
+              <h3 id="strings">Strings</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-40">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-40">&#182;</a>
+              </div>
+              <p>Strings are very important parts to execute because they not only have scape 
+sequences ( <code>\&#39;</code>, <code>\n</code>… ) they also have string interpolations <code>\( ... )</code> the
+value inside the interpolation must be again highlighted in a recursive way using
+the highlight. We use <code>string_sign</code> to know how are string is started, with a <code>&#39;</code>
+or a <code>&quot;</code> so we can find out are we in the end of our string or not. We are also
+going to store all string into <code>string_string</code> (Bas name I’m aware!)</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">"'"</span>:
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'"'</span>:
+
+				<span class="hljs-keyword">var</span> string_string   = <span class="hljs-string">''</span>;
+				<span class="hljs-keyword">var</span> string_sign     = reading_char;
+				<span class="hljs-keyword">var</span> while_control_3 = <span class="hljs-literal">true</span>; 
+
+				i++;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-41">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-41">&#182;</a>
+              </div>
+              <p>So like before we read the string in a while and we get out using our <code>while_control_3</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+				<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_3 ) {
+
+					<span class="hljs-keyword">switch</span> ( text[ i ] ) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-42">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-42">&#182;</a>
+              </div>
+              <p>First thing we check is that are we in the end of our string and if we were
+we wrap the whole string in a nice span as always.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+						<span class="hljs-keyword">case</span> string_sign :
+							result += start + string_color + middle + string_sign + string_string + string_sign + end;
+							while_control_3 = <span class="hljs-literal">false</span>; i--;
+							<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-43">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-43">&#182;</a>
+              </div>
+              <p>Other thing is to take care of scape sequences. Because Arendelle uses 
+<a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html">Swift like String Interpolation</a>
+the interpolation starts with a back slash as well therefore we can take care of all here.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+						<span class="hljs-keyword">case</span> <span class="hljs-string">'\\'</span>:
+							i++;
+
+							<span class="hljs-keyword">switch</span> (text[ i ]) {</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-44">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-44">&#182;</a>
+              </div>
+              <p>Is it interpolation? if it is we have to do this: We read it then we highlight inside
+of it using a recursive use of the <code>markerHighlight</code> function itself like what we did before.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+								<span class="hljs-keyword">case</span> <span class="hljs-string">'('</span>:
+
+									<span class="hljs-keyword">var</span> while_control_4        = <span class="hljs-literal">true</span>;
+									<span class="hljs-keyword">var</span> string_replacer_string = <span class="hljs-string">''</span>;
+									<span class="hljs-keyword">var</span> indent_level		   = <span class="hljs-number">0</span>;
+
+									
+									<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_4 ) {
+
+										i++;
+
+										<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'('</span> ) {
+
+											indent_level++;
+
+										} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">')'</span> ) {
+
+											<span class="hljs-keyword">if</span> ( indent_level === <span class="hljs-number">0</span> ) {
+
+												while_control_4 = <span class="hljs-literal">false</span>; i++;
+												string_string += end + <span class="hljs-string">"\\("</span> + markerHighlight ( string_replacer_string ) + <span class="hljs-string">")"</span> + start + string_color + middle;
+
+											}
+
+											indent_level--;
+
+										} <span class="hljs-keyword">else</span> {
+
+											string_replacer_string += text[ i ];
+
+										}
+									}
+
+									<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-45">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-45">&#182;</a>
+              </div>
+              <p>Or if it’s not a string interpolation it’s a <strong>Scape Sequence</strong>, All we
+have to do is to highlight it.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+								<span class="hljs-keyword">default</span>:
+									string_string += start + data_color + middle + <span class="hljs-string">'\\'</span> + text[ i ] + end;
+									i++;
+
+							}
+
+							i--;
+							<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-46">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-46">&#182;</a>
+              </div>
+              <p>So if it’s not the end of the string, also not a scape 
+sequence or string interpolation then what is it? Yes! It’s
+a plain text! so we add it to the rest of the <code>string_string</code></p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+						<span class="hljs-keyword">default</span>:
+							string_string += text[ i ];
+					}
+
+					i++;
+				}
+
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-47">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-47">&#182;</a>
+              </div>
+              <h3 id="white-spaces">White Spaces</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-48">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-48">&#182;</a>
+              </div>
+              <p>Okay the final thing we check is if the codes are white spaces. Because HTML never
+understands new lines, spaces and tabs we will talk HTML so that the what a new line
+or a tap is</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'\n'</span>:
+				result += <span class="hljs-string">"&lt;br&gt;"</span>;
+				<span class="hljs-keyword">break</span>;
+
+			<span class="hljs-keyword">case</span> <span class="hljs-string">' '</span>:
+				result += <span class="hljs-string">"&amp;nbsp;"</span>;
+				<span class="hljs-keyword">break</span>;
+
+			<span class="hljs-keyword">case</span> <span class="hljs-string">'\t'</span>:
+				result += <span class="hljs-string">"&amp;nbsp;&amp;nbsp;&amp;nbsp;"</span>;
+				<span class="hljs-keyword">break</span>;</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-49">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-49">&#182;</a>
+              </div>
+              <h3 id="nothing-">Nothing!</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-50">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-50">&#182;</a>
+              </div>
+              <p>Yes if non of our cases are true, what we’re reading is not a function
+or a comment or a data type and so. The char is maybe a command, math operator
+standard library function or what ever! So we just add it as what it is.</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+			<span class="hljs-keyword">default</span>:
+				result += reading_char;
+		}
+
+	}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-51">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-51">&#182;</a>
+              </div>
+              <h3 id="done-">Done!</h3>
+
+            </div>
+            
+        </li>
+        
+        
+        <li id="section-52">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-52">&#182;</a>
+              </div>
+              <p>We’re all set, It’s time to return what’s about to return~</p>
+
+            </div>
+            
+            <div class="content"><div class='highlight'><pre>
+	<span class="hljs-keyword">return</span> result ;
+}</pre></div></div>
+            
+        </li>
+        
+        
+        <li id="section-53">
+            <div class="annotation">
+              
+              <div class="pilwrap ">
+                <a class="pilcrow" href="#section-53">&#182;</a>
+              </div>
+              <p><br><br><hr></p>
+<h2 id="license">License</h2>
+<p>Marker.js - Library for highlighting Arendelle Code<br>
+Copyright (c) 2015 Pouya Kary <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#107;&#64;&#x61;&#x72;&#x65;&#x6e;&#100;&#x65;&#108;&#108;&#x65;&#x2e;&#111;&#114;&#103;">&#107;&#64;&#x61;&#x72;&#x65;&#x6e;&#100;&#x65;&#108;&#108;&#x65;&#x2e;&#111;&#114;&#103;</a><br><br></p>
+<p>This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.<br><br></p>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.<br><br></p>
+<p>You should have received a copy of the GNU General Public License
+along with this program.  If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+<p><hr><br><br><br></p>
+
+            </div>
+            
+        </li>
+        
+    </ul>
+  </div>
+</body>
+</html>

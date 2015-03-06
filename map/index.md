@@ -94,6 +94,7 @@ title: Map
 
 ## Annotated Codes
 
+- **[Marker.js](http://kary.us/codes/marker/)**
 - **[Q-Bert](http://kary.us/codes/qbert/)**
 - **[Bulda Language](http://kary.us/codes/bulda/)**
 - **[LLAP](http://kary.us/codes/llap/)**
