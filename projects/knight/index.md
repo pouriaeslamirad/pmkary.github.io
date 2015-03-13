@@ -58,7 +58,7 @@ Designing a program to generate the path can make this even more fun and well th
    ( maxSize , #height - 4 )
    
 // title
-   'Kary\'s Knight | Max Size Possible : \(@maxSize)'
+   "Kary's Knight - Max Size Possible : | @maxSize |"
 
 // How much is our board? ( @long * @long )
    ( long , "Enter a size for the board" )
@@ -106,7 +106,7 @@ Designing a program to generate the path can make this even more fun and well th
 
    ( remaining , @long % 3 )
    
-   'Kary\'s Knight | Max Size Possible : \(@maxSize) | W\(@remaining)'
+   "Kary's Knight - Max Size Possible : | @maxSize) | W| @remaining |'
 
 
    { @remaining = 0,
