@@ -108,7 +108,7 @@ Designing a program to generate the path can make this even more fun and well th
 
    ( remaining , @long % 3 )
    
-   "Kary's Knight - Max Size Possible : | @maxSize) | W: | @remaining |"
+   "Kary's Knight - Max Size Possible : | @maxSize | W: | @remaining |"
 
 
    { @remaining = 0 ,
