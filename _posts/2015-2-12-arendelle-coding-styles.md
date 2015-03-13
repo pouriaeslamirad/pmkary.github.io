@@ -104,11 +104,11 @@ You see how more clear they looks? You can also use them like:
 
 Speaking of parentheses when you use inline string replacers like:
 
-<pre class="arendelle">'Inline string replacer: \( @space )'</pre>
+<pre class="arendelle">'Inline string interpolation: | @space |'</pre>
 
 Use a space before and after the math expression like:
 
-<pre class="arendelle">'half of space is \( @space / 2 )'</pre>
+<pre class="arendelle">'half of space is | @space / 2 |'</pre>
 
 
 <br><br>

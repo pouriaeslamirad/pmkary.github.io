@@ -9,7 +9,7 @@ title: New Debugging in Arendelle
 
 <br>
 
-From now on you can debug your Arendelle code for real. Before this we had a system that enabled you to change title in your screen, All by writing a string there as <code class="arendelle">"some string"</code> and done! You had your title changed to `some string` and you know that we also had this great rich string interpolation there where you could write something in `\( ... )` of the string like <code class="arendelle">"1 + 2 = \\( 1 + 2 )"</code> and you got the title `1 + 2 = 3`. Now we thought hey! Why don't we collect all the title changes somewhere so you can use title changing as a kind of debugging console? So let's look my favorite example of Arendelle Arrays by writing my Fibonacci sequence from 1 to 100:<br><br>
+From now on you can debug your Arendelle code for real. Before this we had a system that enabled you to change title in your screen, All by writing a string there as <code class="arendelle">"some string"</code> and done! You had your title changed to `some string` and you know that we also had this great rich string interpolation there where you could write something in `| ... |` of the string like <code class="arendelle">"1 + 2 = | 1 + 2 |"</code> and you got the title `1 + 2 = 3`. Now we thought hey! Why don't we collect all the title changes somewhere so you can use title changing as a kind of debugging console? So let's look my favorite example of Arendelle Arrays by writing my Fibonacci sequence from 1 to 100:<br><br>
 
 
 <pre class="arendelle">
@@ -19,7 +19,7 @@ From now on you can debug your Arendelle code for real. Before this we had a sys
 
 	( f[ @f? ] , @f[ @f? - 1 ] + @f[ @f? - 2 ] )
 
-	"Fibonacci at index: \( @f? ) is: \( @f[ @f? - 1 ] )"
+	"Fibonacci at index: | @f? | is: | @f[ @f? - 1 ] |"
 ]
 </pre>
 
