@@ -41,7 +41,7 @@
               </div>
               <p>Repo at <a href="https://github.com/arendelle/marker.js">GitHub</a> |
 Online Playground at <a href="http://web.arendelle.org/developer/marker-studio/">Arendelle Developer</a></p>
-<p>&copy; Copyright 2015 Pouya Kary. <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x6b;&#64;&#x61;&#114;&#x65;&#110;&#x64;&#x65;&#108;&#x6c;&#101;&#46;&#111;&#x72;&#x67;">&#x6b;&#64;&#x61;&#114;&#x65;&#110;&#x64;&#x65;&#108;&#x6c;&#101;&#46;&#111;&#x72;&#x67;</a></p>
+<p>&copy; Copyright 2015 Pouya Kary. <a href="&#109;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x6b;&#64;&#97;&#x72;&#101;&#110;&#x64;&#101;&#x6c;&#x6c;&#101;&#46;&#111;&#x72;&#x67;">&#x6b;&#64;&#97;&#x72;&#101;&#110;&#x64;&#101;&#x6c;&#x6c;&#101;&#46;&#111;&#x72;&#x67;</a></p>
 <p>A fast marker to highlight Arendelle codes on the web. 
 It’s designed to work just like <a href="https://highlightjs.org">highlight.js</a> all you
 have to do to get it to work is to simply add this lines to your website:</p>
@@ -53,7 +53,7 @@ have to do to get it to work is to simply add this lines to your website:</p>
             </div>
             
             <div class="content"><div class='highlight'><pre>
-<span class="hljs-keyword">var</span> marker_version = <span class="hljs-string">'1.12'</span>;</pre></div></div>
+<span class="hljs-keyword">var</span> marker_version = <span class="hljs-string">'1.14'</span>;</pre></div></div>
             
         </li>
         
@@ -902,17 +902,39 @@ we wrap the whole string in a nice span as always.</p>
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-43">&#182;</a>
               </div>
-              <p>Other thing is to take care of scape sequences. Because Arendelle uses 
-<a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html">Swift like String Interpolation</a>
-the interpolation starts with a back slash as well therefore we can take care of all here.</p>
+              <p>First implementations of Arendelle used <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html">Swift like String Interpolation</a>
+but since Arendelle Infrastructure Specification 2XII a new grammar replaced it
+which offered a much more readability to the language and it used “|” for starting
+and finishing so an Arendelle string interpolation can be like “| … |” This is how we read
+it and highlight it recursively  </p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>
-						<span class="hljs-keyword">case</span> <span class="hljs-string">'\\'</span>:
-							i++;
+						<span class="hljs-keyword">case</span> <span class="hljs-string">'|'</span>:
 
-							<span class="hljs-keyword">switch</span> (text[ i ]) {</pre></div></div>
+							<span class="hljs-keyword">var</span> while_control_4        = <span class="hljs-literal">true</span>;
+							<span class="hljs-keyword">var</span> string_replacer_string = <span class="hljs-string">''</span>;
+									
+							<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_4 ) {
+
+								i++;
+
+								<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'|'</span> ) {
+
+									while_control_4 = <span class="hljs-literal">false</span>; i++;
+									string_string += end + <span class="hljs-string">"|"</span> + markerHighlight ( string_replacer_string ) + <span class="hljs-string">"|"</span> + start + string_color + middle;
+
+								} <span class="hljs-keyword">else</span> {
+
+									string_replacer_string += text[ i ];
+
+								}
+							}
+
+							i--;
+
+							<span class="hljs-keyword">break</span>;</pre></div></div>
             
         </li>
         
@@ -923,46 +945,18 @@ the interpolation starts with a back slash as well therefore we can take care of
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-44">&#182;</a>
               </div>
-              <p>Is it interpolation? if it is we have to do this: We read it then we highlight inside
-of it using a recursive use of the <code>markerHighlight</code> function itself like what we did before.</p>
+              <p>The other thing about strings are their scape sequences:</p>
 
             </div>
             
             <div class="content"><div class='highlight'><pre>
-								<span class="hljs-keyword">case</span> <span class="hljs-string">'('</span>:
+						<span class="hljs-keyword">case</span> <span class="hljs-string">'\\'</span>:
 
-									<span class="hljs-keyword">var</span> while_control_4        = <span class="hljs-literal">true</span>;
-									<span class="hljs-keyword">var</span> string_replacer_string = <span class="hljs-string">''</span>;
-									<span class="hljs-keyword">var</span> indent_level		   = <span class="hljs-number">0</span>;
+							i++;
 
-									
-									<span class="hljs-keyword">while</span> ( i &lt; text.length &amp;&amp; while_control_4 ) {
+							string_string += start + data_color + middle + <span class="hljs-string">'\\'</span> + text[ i ] + end;
 
-										i++;
-
-										<span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">'('</span> ) {
-
-											indent_level++;
-
-										} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ( text[ i ] === <span class="hljs-string">')'</span> ) {
-
-											<span class="hljs-keyword">if</span> ( indent_level === <span class="hljs-number">0</span> ) {
-
-												while_control_4 = <span class="hljs-literal">false</span>; i++;
-												string_string += end + <span class="hljs-string">"\\("</span> + markerHighlight ( string_replacer_string ) + <span class="hljs-string">")"</span> + start + string_color + middle;
-
-											}
-
-											indent_level--;
-
-										} <span class="hljs-keyword">else</span> {
-
-											string_replacer_string += text[ i ];
-
-										}
-									}
-
-									<span class="hljs-keyword">break</span>;</pre></div></div>
+							<span class="hljs-keyword">break</span>;</pre></div></div>
             
         </li>
         
@@ -972,30 +966,6 @@ of it using a recursive use of the <code>markerHighlight</code> function itself 
               
               <div class="pilwrap ">
                 <a class="pilcrow" href="#section-45">&#182;</a>
-              </div>
-              <p>Or if it’s not a string interpolation it’s a <strong>Scape Sequence</strong>, All we
-have to do is to highlight it.</p>
-
-            </div>
-            
-            <div class="content"><div class='highlight'><pre>
-								<span class="hljs-keyword">default</span>:
-									string_string += start + data_color + middle + <span class="hljs-string">'\\'</span> + text[ i ] + end;
-									i++;
-
-							}
-
-							i--;
-							<span class="hljs-keyword">break</span>;</pre></div></div>
-            
-        </li>
-        
-        
-        <li id="section-46">
-            <div class="annotation">
-              
-              <div class="pilwrap ">
-                <a class="pilcrow" href="#section-46">&#182;</a>
               </div>
               <p>So if it’s not the end of the string, also not a scape 
 sequence or string interpolation then what is it? Yes! It’s
@@ -1016,11 +986,11 @@ a plain text! so we add it to the rest of the <code>string_string</code></p>
         </li>
         
         
-        <li id="section-47">
+        <li id="section-46">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-47">&#182;</a>
+                <a class="pilcrow" href="#section-46">&#182;</a>
               </div>
               <h3 id="white-spaces">White Spaces</h3>
 
@@ -1029,11 +999,11 @@ a plain text! so we add it to the rest of the <code>string_string</code></p>
         </li>
         
         
-        <li id="section-48">
+        <li id="section-47">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-48">&#182;</a>
+                <a class="pilcrow" href="#section-47">&#182;</a>
               </div>
               <p>Okay the final thing we check is if the codes are white spaces. Because HTML never
 understands new lines, spaces and tabs we will talk HTML so that the what a new line
@@ -1057,11 +1027,11 @@ or a tap is</p>
         </li>
         
         
-        <li id="section-49">
+        <li id="section-48">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-49">&#182;</a>
+                <a class="pilcrow" href="#section-48">&#182;</a>
               </div>
               <h3 id="nothing-">Nothing!</h3>
 
@@ -1070,11 +1040,11 @@ or a tap is</p>
         </li>
         
         
-        <li id="section-50">
+        <li id="section-49">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-50">&#182;</a>
+                <a class="pilcrow" href="#section-49">&#182;</a>
               </div>
               <p>Yes if non of our cases are true, what we’re reading is not a function
 or a comment or a data type and so. The char is maybe a command, math operator
@@ -1092,11 +1062,11 @@ standard library function or what ever! So we just add it as what it is.</p>
         </li>
         
         
-        <li id="section-51">
+        <li id="section-50">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-51">&#182;</a>
+                <a class="pilcrow" href="#section-50">&#182;</a>
               </div>
               <h3 id="done-">Done!</h3>
 
@@ -1105,11 +1075,11 @@ standard library function or what ever! So we just add it as what it is.</p>
         </li>
         
         
-        <li id="section-52">
+        <li id="section-51">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-52">&#182;</a>
+                <a class="pilcrow" href="#section-51">&#182;</a>
               </div>
               <p>We’re all set, It’s time to return what’s about to return~</p>
 
@@ -1122,16 +1092,16 @@ standard library function or what ever! So we just add it as what it is.</p>
         </li>
         
         
-        <li id="section-53">
+        <li id="section-52">
             <div class="annotation">
               
               <div class="pilwrap ">
-                <a class="pilcrow" href="#section-53">&#182;</a>
+                <a class="pilcrow" href="#section-52">&#182;</a>
               </div>
               <p><br><br><hr></p>
 <h2 id="license">License</h2>
 <p>Marker.js - Library for highlighting Arendelle Code<br>
-Copyright (c) 2015 Pouya Kary <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x6b;&#64;&#97;&#114;&#101;&#x6e;&#x64;&#x65;&#108;&#x6c;&#x65;&#x2e;&#111;&#114;&#103;">&#x6b;&#64;&#97;&#114;&#101;&#x6e;&#x64;&#x65;&#108;&#x6c;&#x65;&#x2e;&#111;&#114;&#103;</a><br><br></p>
+Copyright (c) 2015 Pouya Kary <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#x3a;&#x6b;&#64;&#x61;&#114;&#x65;&#x6e;&#100;&#x65;&#108;&#108;&#101;&#46;&#x6f;&#114;&#103;">&#x6b;&#64;&#x61;&#114;&#x65;&#x6e;&#100;&#x65;&#108;&#108;&#101;&#46;&#x6f;&#114;&#103;</a><br><br></p>
 <p>This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
