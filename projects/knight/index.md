@@ -60,7 +60,7 @@ Designing a program to generate the path can make this even more fun and well th
 // title
    "Kary's Knight - Max Size Possible : | @maxSize |"
 
-// How much is our board? ( @long * @long )
+// How much is our board? 
    ( long , "Enter a size for the board" )
 
 
@@ -73,9 +73,9 @@ Designing a program to generate the path can make this even more fun and well th
    ( spacing , ( #height - @long ) / 2 )
    [ @spacing , r ] [ @spacing , d ]
 
-
 // The first color should not contain
 // the 100% capacity.
+
    n
  
    ( line , 0 )
@@ -89,8 +89,10 @@ Designing a program to generate the path can make this even more fun and well th
       { @long % 2 = 0 , nn }
    ]
 
+
 // Now we have to get to the bottom left
 // of our board.
+
    i [ @spacing , r ]
    [ @spacing + @long - 1  , d ]
    { @long % 2 = 0 , nnn , n } 
@@ -106,11 +108,10 @@ Designing a program to generate the path can make this even more fun and well th
 
    ( remaining , @long % 3 )
    
-   "Kary's Knight - Max Size Possible : | @maxSize) | W| @remaining |'
+   "Kary's Knight - Max Size Possible : | @maxSize) | W: | @remaining |"
 
 
-   { @remaining = 0,
-   // W0 ///////////////////////////////////
+   { @remaining = 0 ,
 
       // M1
          [ Floor((@long-5)/3) ,
@@ -127,8 +128,7 @@ Designing a program to generate the path can make this even more fun and well th
          rr d p uu rp      
 
 
-   ,{ @remaining =1,
-   // W1 ///////////////////////////////////
+   ,{ @remaining = 1 ,
 
       // M1
          [ Floor((@long)/3) ,
@@ -140,10 +140,10 @@ Designing a program to generate the path can make this even more fun and well th
 
 
    ,
-   // W2 ///////////////////////////////////
 
       // M1
-         [ Floor((@long-5)/3) ,
+
+         [ floor( ( @long - 5 ) / 3 ) ,
 
             [ 2 , u ] p
             u [ 3 , r ] p
@@ -151,7 +151,7 @@ Designing a program to generate the path can make this even more fun and well th
          ]
 
       // M4
-         [ 2 , [ 2 , u ] rp]
+         [ 2 , [ 2 , u ] rp ]
       
       // M3
          [ 2 , d ] rp [ 2 , u ] rp 
