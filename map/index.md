@@ -19,6 +19,8 @@ title: Map
 
 ### From my curent blog
 
+- **[Lots of resources for Language Developers](http://kary.us/2015/03/19/programming-langs-sources/)**
+- **[Matrix Colors in Swift](http://kary.us/2015/03/15/colors-in-swift/)**
 - **[Specification 2XII](http://kary.us/2015/03/04/specification-2xii/)**
 - **[I ♥︎ UNIX I](http://kary.us/2015/03/02/i-heart-unix-i/)**
 - **[Live Long and Prosper Leonard](http://kary.us/2015/03/01/live-long-and-prosper-leonard/)**
