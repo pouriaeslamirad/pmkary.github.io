@@ -1,4 +1,4 @@
-—--
+---
 layout: post
 title: Lots of resources for Language Developers
 ---
@@ -72,4 +72,5 @@ Now that you know the basics this is my whole list. There are topics from basic 
 - [European Conference on Object-Oriented Programming](http://www.ecoop.org/)
 - [ACM SIGPLAN](http://2015.splashcon.org/)
 - [A Week with Elixir](http://joearms.github.io/2013/05/31/a-week-with-elixir.html)
+
 I wish it be a good reference for you!
