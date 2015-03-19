@@ -3,7 +3,7 @@ layout: post
 title: Design of Kary Systems logo
 ---
 
-<br>![](http://kary.us/Graphics/Blog/7011.19.2.11/keynote_look.png)<br><br>
+<br>![](http://kary.us/Graphics/Blog/7011.19.2.11/keynote_look.png)<br>
 
 Today was birthday of Arendelle. Yes it's a very awesome and happy day for me. I remember how actually I invented Arendelle in this day a year ago and I had no idea what could have happened in one year of it's development which means I have no idea about how it's going to grow in the future so I guess we should wait and see. However I'm starting a company called "Kary Systems" which will work as a research lab to create awesome technologies and will have some business going. For start we want to run a program called "Julitte" that will be the base of operations for our programming learning platform based on Arendelle + Python and our own teaching process.
 
