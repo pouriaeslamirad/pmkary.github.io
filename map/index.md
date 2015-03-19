@@ -115,6 +115,9 @@ title: Map
 
 ## Arendelle Resources
 
+- **[Arendelle in RossetaCode](http://rosettacode.org/wiki/Category:Arendelle)**
+- **[Specification 2XII](http://kary.us/2015/03/04/specification-2xii/)**
+- **[New Debugging in Arendelle](http://kary.us/2015/02/28/new-debugging-in-arendelle/)**
 - **[Arendelle Coding Style](http://kary.us/2015/02/12/arendelle-coding-styles/)**
 - **[Arrays in Arendelle](http://kary.us/2015/01/29/arrays-in-arendelle/)**
 - **[Arendelle: random numbers included](http://old-2.kary.us/blog/arendelle-random-numbers-included)**
