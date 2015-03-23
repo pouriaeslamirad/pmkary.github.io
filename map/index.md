@@ -111,6 +111,7 @@ title: Map
 - **[10PRINT](https://github.com/pmkary/10print.arendelle)**
 - **[Q-Bert](https://github.com/arendelle/qbert.arendelle)**
 - **[Lambda](https://github.com/arendelle/lambda.arendelle)**
+- **[Magic 8 Ball](https://github.com/pmkary/8.arendelle)**
 
 ***
 
